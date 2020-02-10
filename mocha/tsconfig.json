@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "types": [
+            "node"
+        ],
+        "target": "es2018",
+        "lib": [
+            "es2018"
+        ],
+        "outDir": "../test"
+    },
+    "include": [
+        "*.ts"
+    ]
+}

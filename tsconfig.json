@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "strictNullChecks": true,
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "declaration": true,
+        "types": [
+            "node"
+        ],
+        "target": "es2018",
+        "lib": [
+            "es2018"
+        ],
+        "outDir": "lib"
+    },
+    "include": [
+        "src"
+    ]
+}
