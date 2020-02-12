@@ -25,7 +25,7 @@ auto-complete features.
 import * as cortex from 'pan-cortex-data-lake'
 ```
 
-# Authorization
+# Authorization
 There are two options to get your application authorized to access customer data
 using the Cortex Data Lake API:
 * Getting a client certificate (platform applications)
@@ -60,7 +60,7 @@ async function init() {
 ## Using stream readable interface
 ```javascript
 function main() {
-    const queryStream = qsc.stream("SELECT * from `" + TENANTID + ".firewall.traffic` LIMIT 10");
+    const queryStream = qsc.stream("SELECT * from `" + INSTANCE_ID + ".firewall.traffic` LIMIT 10");
     return new Promise((res, rej) => {
         queryStream.on('error', rej);
         queryStream.on('end', res);
@@ -72,7 +72,7 @@ function main() {
 ## Using async iterable interface (introduced in ES2018)
 ```javascript
 async function main() {
-    for await (const page of qsc.iterator("SELECT * from `" + TENANTID + ".firewall.traffic` LIMIT 10")) {
+    for await (const page of qsc.iterator("SELECT * from `" + INSTANCE_ID + ".firewall.traffic` LIMIT 10")) {
         console.log(page);
     }
 }
