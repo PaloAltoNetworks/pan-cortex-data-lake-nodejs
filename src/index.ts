@@ -20,7 +20,6 @@
  */
 declare global { type Blob = any }
 export * from './query'
-export * from './schema'
 export { ErrorTypes } from './sdkError'
 export { Http2Fetch, CredentialTuple } from './http2client'
 export { setLogLevel, logLevel } from './commonlogger'

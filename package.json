@@ -1,7 +1,7 @@
 {
   "name": "pan-cortex-data-lake",
   "version": "0.1.0",
-  "description": "",
+  "description": "Palo Alto Networks Cortex Data Lake client library",
   "main": "lib/index.js",
   "scripts": {
     "build": "npm run clean && npm run build:lib && npm run build:test && npm run build:doc",
@@ -14,9 +14,7 @@
   "author": "Palo Alto Networks Developer Relations",
   "license": "Apache-2.0",
   "dependencies": {
-    "@grpc/proto-loader": "^0.5.1",
-    "avsc": "^5.4.13",
-    "grpc": "^1.21.1"
+    "avsc": "^5.4.13"
   },
   "devDependencies": {
     "@types/mocha": "^5.2.7",

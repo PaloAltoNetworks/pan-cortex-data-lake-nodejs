@@ -77,6 +77,8 @@ async function main() {
     }
 }
 ```
+# Code snippets
+Review the folder `/examples` for quick starting code
 
 # Running the integration tests
 1. Optional: run `npm run build:test` to build the mocha integration test (`/test` directory)

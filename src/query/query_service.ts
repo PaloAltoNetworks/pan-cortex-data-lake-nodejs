@@ -38,7 +38,7 @@ export class QueryService {
     private static pathQsCombo(path: string, opts?: GetJobsListOpts | GetJobResultsOpts): string {
         let returnPath = path
         if (opts) {
-            path += '?' + stringify(opts)
+            returnPath += '?' + stringify(opts)
         }
         return returnPath
     }
