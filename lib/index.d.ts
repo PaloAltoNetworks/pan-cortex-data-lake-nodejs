@@ -12,7 +12,6 @@ export * from './query';
 export { ErrorTypes } from './sdkError';
 export { Http2Fetch, CredentialTuple } from './http2client';
 export { setLogLevel, logLevel } from './commonlogger';
-export { FetchOptions, HttpMethod } from './fetch';
 export { cortexConstants } from './constants';
 /**
  * The basic methods expected from an object that provides credentials
