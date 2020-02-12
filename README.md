@@ -56,6 +56,12 @@ async function init() {
 }
 ```
 
+Take a look to the complementary repo
+[pan-cortex-hub-nodejs](https://spring.paloaltonetworks.com/xhoms/pan-cortex-hub-nodejs)
+with a collection of compatible `credential` objects as well as full secret
+repositories (`CortexCredentialProvider`) and building blocks for a SaaS
+component to interface with Cortex hub.
+
 # Getting started with QueryService
 ## Using stream readable interface
 ```javascript
