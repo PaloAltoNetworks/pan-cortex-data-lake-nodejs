@@ -1,4 +1,4 @@
-[pan-cortex-data-lake](../README.md) › ["query/query_service_client"](../modules/_query_query_service_client_.md) › [QueryServiceClientOptions](_query_query_service_client_.queryserviceclientoptions.md)
+[pan-cortex-data-lake](../README.md) › [QueryServiceClientOptions](queryserviceclientoptions.md)
 
 # Interface: QueryServiceClientOptions
 
@@ -12,11 +12,11 @@ Configuration options for the QueryServiceClient object
 
 ### Properties
 
-* [autoClose](_query_query_service_client_.queryserviceclientoptions.md#optional-autoclose)
-* [cred](_query_query_service_client_.queryserviceclientoptions.md#optional-cred)
-* [delay](_query_query_service_client_.queryserviceclientoptions.md#optional-delay)
-* [pageSize](_query_query_service_client_.queryserviceclientoptions.md#optional-pagesize)
-* [retries](_query_query_service_client_.queryserviceclientoptions.md#optional-retries)
+* [autoClose](queryserviceclientoptions.md#optional-autoclose)
+* [cred](queryserviceclientoptions.md#optional-cred)
+* [delay](queryserviceclientoptions.md#optional-delay)
+* [pageSize](queryserviceclientoptions.md#optional-pagesize)
+* [retries](queryserviceclientoptions.md#optional-retries)
 
 ## Properties
 
@@ -34,7 +34,7 @@ ___
 
 ### `Optional` cred
 
-• **cred**? : *[CredentialTuple](../modules/_index_.md#credentialtuple)*
+• **cred**? : *[CredentialTuple](../README.md#credentialtuple)*
 
 Defined in src/query/query_service_client.ts:205
 

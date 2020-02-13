@@ -1,4 +1,4 @@
-[pan-cortex-data-lake](../README.md) › ["http2client"](../modules/_http2client_.md) › [Http2FetchError](_http2client_.http2fetcherror.md)
+[pan-cortex-data-lake](../README.md) › [Http2FetchError](http2fetcherror.md)
 
 # Class: Http2FetchError
 
@@ -6,7 +6,7 @@ Error subclass that allows the developer get insights on reasons for a HTTP2 err
 
 ## Hierarchy
 
-* [Error](_sdkerror_.sdkerror.md#static-error)
+* [Error](sdkerror.md#static-error)
 
   ↳ **Http2FetchError**
 
@@ -14,22 +14,22 @@ Error subclass that allows the developer get insights on reasons for a HTTP2 err
 
 ### Constructors
 
-* [constructor](_http2client_.http2fetcherror.md#constructor)
+* [constructor](http2fetcherror.md#constructor)
 
 ### Properties
 
-* [data](_http2client_.http2fetcherror.md#data)
-* [message](_http2client_.http2fetcherror.md#message)
-* [name](_http2client_.http2fetcherror.md#name)
-* [stack](_http2client_.http2fetcherror.md#optional-stack)
-* [status](_http2client_.http2fetcherror.md#status)
-* [Error](_http2client_.http2fetcherror.md#static-error)
+* [data](http2fetcherror.md#data)
+* [message](http2fetcherror.md#message)
+* [name](http2fetcherror.md#name)
+* [stack](http2fetcherror.md#optional-stack)
+* [status](http2fetcherror.md#status)
+* [Error](http2fetcherror.md#static-error)
 
 ## Constructors
 
 ###  constructor
 
-\+ **new Http2FetchError**(`message`: string, `status`: number, `data`: any): *[Http2FetchError](_http2client_.http2fetcherror.md)*
+\+ **new Http2FetchError**(`message`: string, `status`: number, `data`: any): *[Http2FetchError](http2fetcherror.md)*
 
 Defined in src/http2client.ts:48
 
@@ -41,7 +41,7 @@ Name | Type |
 `status` | number |
 `data` | any |
 
-**Returns:** *[Http2FetchError](_http2client_.http2fetcherror.md)*
+**Returns:** *[Http2FetchError](http2fetcherror.md)*
 
 ## Properties
 
@@ -59,7 +59,7 @@ ___
 
 • **message**: *string*
 
-*Inherited from [SdkError](_sdkerror_.sdkerror.md).[message](_sdkerror_.sdkerror.md#message)*
+*Inherited from [SdkError](sdkerror.md).[message](sdkerror.md#message)*
 
 Defined in node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:974
 
@@ -69,7 +69,7 @@ ___
 
 • **name**: *string*
 
-*Inherited from [SdkError](_sdkerror_.sdkerror.md).[name](_sdkerror_.sdkerror.md#name)*
+*Inherited from [SdkError](sdkerror.md).[name](sdkerror.md#name)*
 
 Defined in node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:973
 
@@ -79,7 +79,7 @@ ___
 
 • **stack**? : *undefined | string*
 
-*Inherited from [SdkError](_sdkerror_.sdkerror.md).[stack](_sdkerror_.sdkerror.md#optional-stack)*
+*Inherited from [SdkError](sdkerror.md).[stack](sdkerror.md#optional-stack)*
 
 Defined in node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:975
 

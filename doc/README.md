@@ -4,16 +4,733 @@
 
 ## Index
 
-### External modules
+### Modules
 
-* ["commonlogger"](modules/_commonlogger_.md)
-* ["constants"](modules/_constants_.md)
-* ["http2client"](modules/_http2client_.md)
-* ["index"](modules/_index_.md)
-* ["query/index"](modules/_query_index_.md)
-* ["query/query_service"](modules/_query_query_service_.md)
-* ["query/query_service_client"](modules/_query_query_service_client_.md)
-* ["query/query_service_client_error"](modules/_query_query_service_client_error_.md)
-* ["query/query_service_error"](modules/_query_query_service_error_.md)
-* ["query/query_service_models"](modules/_query_query_service_models_.md)
-* ["sdkError"](modules/_sdkerror_.md)
+* [__global](modules/__global.md)
+
+### Enumerations
+
+* [ErrorTypes](enums/errortypes.md)
+* [jobState](enums/jobstate.md)
+* [logLevel](enums/loglevel.md)
+* [readableStates](enums/readablestates.md)
+
+### Classes
+
+* [ErrorTools](classes/errortools.md)
+* [Http2Fetch](classes/http2fetch.md)
+* [Http2FetchError](classes/http2fetcherror.md)
+* [QueryIterator](classes/queryiterator.md)
+* [QueryService](classes/queryservice.md)
+* [QueryServiceClient](classes/queryserviceclient.md)
+* [QueryServiceClientError](classes/queryserviceclienterror.md)
+* [QueryServiceError](classes/queryserviceerror.md)
+* [QueryStream](classes/querystream.md)
+* [QueryWorker](classes/queryworker.md)
+* [SdkError](classes/sdkerror.md)
+
+### Interfaces
+
+* [Credentials](interfaces/credentials.md)
+* [Http2FetchOpts](interfaces/http2fetchopts.md)
+* [QueryServiceClientOptions](interfaces/queryserviceclientoptions.md)
+
+### Type aliases
+
+* [CredentialTuple](README.md#credentialtuple)
+* [GetJobResultsOpts](README.md#getjobresultsopts)
+* [GetJobsListOpts](README.md#getjobslistopts)
+* [JobState](README.md#jobstate)
+* [Query](README.md#query)
+* [QueryApiError](README.md#queryapierror)
+* [QueryJobDetail](README.md#queryjobdetail)
+* [QueryJobResp](README.md#queryjobresp)
+* [QueryParams](README.md#queryparams)
+* [QueryResultResp](README.md#queryresultresp)
+* [ResultFormat](README.md#resultformat)
+
+### Variables
+
+* [APIEPMAP](README.md#apiepmap)
+* [DEFAULT_DELAY](README.md#const-default_delay)
+* [DEFAULT_PAGE_SIZE](README.md#const-default_page_size)
+* [EP_QUERY](README.md#ep_query)
+* [EUFQDN](README.md#const-eufqdn)
+* [HTTP2_HEADER_AUTHORIZATION](README.md#http2_header_authorization)
+* [HTTP2_HEADER_CONTENT_LENGTH](README.md#http2_header_content_length)
+* [HTTP2_HEADER_CONTENT_TYPE](README.md#http2_header_content_type)
+* [HTTP2_HEADER_METHOD](README.md#http2_header_method)
+* [HTTP2_HEADER_PATH](README.md#http2_header_path)
+* [HTTP2_HEADER_STATUS](README.md#http2_header_status)
+* [HTTP2_METHOD_DELETE](README.md#http2_method_delete)
+* [HTTP2_METHOD_GET](README.md#http2_method_get)
+* [HTTP2_METHOD_POST](README.md#http2_method_post)
+* [HTTP2_METHOD_PUT](README.md#http2_method_put)
+* [MAX_RETRIES](README.md#const-max_retries)
+* [USFQDN](README.md#const-usfqdn)
+* [currentLogLevel](README.md#let-currentloglevel)
+* [envLevel](README.md#const-envlevel)
+* [initJobCount](README.md#let-initjobcount)
+* [logFunc](README.md#const-logfunc)
+* [seqno](README.md#let-seqno)
+
+### Functions
+
+* [commonLogger](README.md#commonlogger)
+* [isJobState](README.md#isjobstate)
+* [isQueryApiError](README.md#isqueryapierror)
+* [isQueryJobDetail](README.md#isqueryjobdetail)
+* [isQueryJobResp](README.md#isqueryjobresp)
+* [isQueryParams](README.md#isqueryparams)
+* [isQueryResultResp](README.md#isqueryresultresp)
+* [setLogLevel](README.md#setloglevel)
+* [uuid](README.md#uuid)
+
+### Object literals
+
+* [cortexConstants](README.md#const-cortexconstants)
+
+## Type aliases
+
+###  CredentialTuple
+
+Ƭ **CredentialTuple**: *object*
+
+Defined in src/http2client.ts:75
+
+Credential tuple
+
+#### Type declaration:
+
+* **cred**: *[Credentials](interfaces/credentials.md)*
+
+* **dlid**: *string*
+
+* **entrypoint**: *string*
+
+___
+
+###  GetJobResultsOpts
+
+Ƭ **GetJobResultsOpts**: *object*
+
+Defined in src/query/query_service_models.ts:308
+
+Configuration options for the Get Job Results Query API call
+
+#### Type declaration:
+
+* **maxWait**? : *undefined | number*
+
+* **offset**? : *undefined | number*
+
+* **pageCursor**? : *string | null*
+
+* **pageNumber**? : *undefined | number*
+
+* **pageSize**? : *undefined | number*
+
+* **resultFormat**? : *[ResultFormat](README.md#resultformat)*
+
+___
+
+###  GetJobsListOpts
+
+Ƭ **GetJobsListOpts**: *object*
+
+Defined in src/query/query_service_models.ts:355
+
+Configuration options for the Get Jobs List Query API call
+
+#### Type declaration:
+
+* **createdAfter**? : *undefined | number*
+
+* **maxJobs**? : *undefined | number*
+
+* **state**? : *keyof typeof jobState*
+
+* **tenantId**: *string*
+
+___
+
+###  JobState
+
+Ƭ **JobState**: *"PENDING" | "RUNNING" | "DONE" | "FAILED" | "CANCELLED"*
+
+Defined in src/query/query_service_models.ts:134
+
+The different states a query job can be
+
+___
+
+###  Query
+
+Ƭ **Query**: *object*
+
+Defined in src/query/query_service_models.ts:84
+
+Interface that describes a query job
+
+#### Type declaration:
+
+* **jobId**? : *undefined | string*
+
+* **params**: *[QueryParams](README.md#queryparams)*
+
+___
+
+###  QueryApiError
+
+Ƭ **QueryApiError**: *object*
+
+Defined in src/query/query_service_models.ts:277
+
+Model of a query service error response
+
+#### Type declaration:
+
+* **context**? : *undefined | string*
+
+* **errorCode**? : *undefined | number*
+
+* **message**? : *undefined | string*
+
+___
+
+###  QueryJobDetail
+
+Ƭ **QueryJobDetail**: *object*
+
+Defined in src/query/query_service_models.ts:143
+
+Detailed information about a query job
+
+#### Type declaration:
+
+* **endTime**? : *undefined | number*
+
+* **jobId**: *string*
+
+* **params**? : *[QueryParams](README.md#queryparams)*
+
+* **progress**? : *undefined | object*
+
+* **startTime**? : *undefined | number*
+
+* **state**: *[JobState](README.md#jobstate)*
+
+* **statistics**? : *undefined | object*
+
+* **submitTime**: *number*
+
+___
+
+###  QueryJobResp
+
+Ƭ **QueryJobResp**: *object*
+
+Defined in src/query/query_service_models.ts:99
+
+Models the response provided by the Query Service
+
+#### Type declaration:
+
+* **jobId**: *string*
+
+* **uri**: *string*
+
+___
+
+###  QueryParams
+
+Ƭ **QueryParams**: *object*
+
+Defined in src/query/query_service_models.ts:17
+
+Describes mandatory and optional configuration options to perform a query job
+
+#### Type declaration:
+
+* **dialect**? : *undefined | string*
+
+* **properties**? : *undefined | object*
+
+* **query**: *string*
+
+___
+
+###  QueryResultResp
+
+Ƭ **QueryResultResp**: *object*
+
+Defined in src/query/query_service_models.ts:215
+
+Model of a query service result response
+
+#### Type declaration:
+
+* **jobId**: *string*
+
+* **page**(): *object*
+
+  * **pageCursor**: *string | null*
+
+  * **result**(): *object*
+
+    * **data**: *any[]*
+
+* **resultFormat**: *[ResultFormat](README.md#resultformat)*
+
+* **rowsInJob**? : *undefined | number*
+
+* **rowsInPage**? : *undefined | number*
+
+* **schema**? : *undefined | object*
+
+* **state**: *[JobState](README.md#jobstate)*
+
+___
+
+###  ResultFormat
+
+Ƭ **ResultFormat**: *"valuesArray" | "valuesDictionary"*
+
+Defined in src/query/query_service_models.ts:210
+
+The different formats a job query result could have
+
+## Variables
+
+###  APIEPMAP
+
+• **APIEPMAP**: *object*
+
+Defined in src/http2client.ts:33
+
+#### Type declaration:
+
+* **americas**: *string* = USFQDN
+
+* **europe**: *string* = EUFQDN
+
+___
+
+### `Const` DEFAULT_DELAY
+
+• **DEFAULT_DELAY**: *200* = 200
+
+Defined in src/query/query_service_client.ts:22
+
+___
+
+### `Const` DEFAULT_PAGE_SIZE
+
+• **DEFAULT_PAGE_SIZE**: *400* = 400
+
+Defined in src/query/query_service_client.ts:23
+
+___
+
+###  EP_QUERY
+
+• **EP_QUERY**: *string*
+
+Defined in src/query/query_service.ts:25
+
+___
+
+### `Const` EUFQDN
+
+• **EUFQDN**: *"api.nl.cdl.paloaltonetworks.com"* = "api.nl.cdl.paloaltonetworks.com"
+
+Defined in src/constants.ts:14
+
+___
+
+###  HTTP2_HEADER_AUTHORIZATION
+
+• **HTTP2_HEADER_AUTHORIZATION**: *string*
+
+Defined in src/http2client.ts:28
+
+___
+
+###  HTTP2_HEADER_CONTENT_LENGTH
+
+• **HTTP2_HEADER_CONTENT_LENGTH**: *string*
+
+Defined in src/http2client.ts:30
+
+___
+
+###  HTTP2_HEADER_CONTENT_TYPE
+
+• **HTTP2_HEADER_CONTENT_TYPE**: *string*
+
+Defined in src/http2client.ts:29
+
+___
+
+###  HTTP2_HEADER_METHOD
+
+• **HTTP2_HEADER_METHOD**: *string*
+
+Defined in src/http2client.ts:26
+
+___
+
+###  HTTP2_HEADER_PATH
+
+• **HTTP2_HEADER_PATH**: *string*
+
+Defined in src/http2client.ts:25
+
+___
+
+###  HTTP2_HEADER_STATUS
+
+• **HTTP2_HEADER_STATUS**: *string*
+
+Defined in src/http2client.ts:27
+
+___
+
+###  HTTP2_METHOD_DELETE
+
+• **HTTP2_METHOD_DELETE**: *string*
+
+Defined in src/http2client.ts:22
+
+___
+
+###  HTTP2_METHOD_GET
+
+• **HTTP2_METHOD_GET**: *string*
+
+Defined in src/http2client.ts:21
+
+___
+
+###  HTTP2_METHOD_POST
+
+• **HTTP2_METHOD_POST**: *string*
+
+Defined in src/http2client.ts:23
+
+___
+
+###  HTTP2_METHOD_PUT
+
+• **HTTP2_METHOD_PUT**: *string*
+
+Defined in src/http2client.ts:24
+
+___
+
+### `Const` MAX_RETRIES
+
+• **MAX_RETRIES**: *10* = 10
+
+Defined in src/query/query_service_client.ts:21
+
+___
+
+### `Const` USFQDN
+
+• **USFQDN**: *"cortex-prd1-api.us.cdl.paloaltonetworks.com"* = "cortex-prd1-api.us.cdl.paloaltonetworks.com"
+
+Defined in src/constants.ts:16
+
+___
+
+### `Let` currentLogLevel
+
+• **currentLogLevel**: *[logLevel](enums/loglevel.md)* = (isNaN(envLevel) && logLevel.INFO) || envLevel
+
+Defined in src/commonlogger.ts:27
+
+___
+
+### `Const` envLevel
+
+• **envLevel**: *number* = Number.parseInt(process.env['CORTEX_SDK_LOG'] || '', 10)
+
+Defined in src/commonlogger.ts:26
+
+___
+
+### `Let` initJobCount
+
+• **initJobCount**: *number* = Date.now()
+
+Defined in src/query/query_service_client.ts:25
+
+___
+
+### `Const` logFunc
+
+• **logFunc**: *debug[]* = [console.debug, console.info, console.warn, console.error]
+
+Defined in src/commonlogger.ts:28
+
+___
+
+### `Let` seqno
+
+• **seqno**: *number* = Math.floor(Math.random() * 10000)
+
+Defined in src/http2client.ts:35
+
+## Functions
+
+###  commonLogger
+
+▸ **commonLogger**(`error`: [Error](classes/sdkerror.md#static-error)): *void*
+
+Defined in src/commonlogger.ts:34
+
+logs an error object
+
+**Parameters:**
+
+Name | Type | Description |
+------ | ------ | ------ |
+`error` | [Error](classes/sdkerror.md#static-error) | object to be logged  |
+
+**Returns:** *void*
+
+▸ **commonLogger**(`level`: [logLevel](enums/loglevel.md), `message`: string, `noPrefix?`: undefined | false | true): *void*
+
+Defined in src/commonlogger.ts:41
+
+logs a message string
+
+**Parameters:**
+
+Name | Type | Description |
+------ | ------ | ------ |
+`level` | [logLevel](enums/loglevel.md) | level of the message |
+`message` | string | the error message |
+`noPrefix?` | undefined &#124; false &#124; true | to remove the 'CORTEX_SDK' prefix in the output  |
+
+**Returns:** *void*
+
+___
+
+###  isJobState
+
+▸ **isJobState**(`obj`: any): *obj is JobState*
+
+Defined in src/query/query_service_models.ts:136
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`obj` | any |
+
+**Returns:** *obj is JobState*
+
+___
+
+###  isQueryApiError
+
+▸ **isQueryApiError**(`obj`: any): *obj is QueryApiError*
+
+Defined in src/query/query_service_models.ts:298
+
+Convenience type guard function to check if an object conforms to the
+`QueryApiError` interface
+
+**Parameters:**
+
+Name | Type | Description |
+------ | ------ | ------ |
+`obj` | any | the object to be checked |
+
+**Returns:** *obj is QueryApiError*
+
+true if the interface is satisfied
+
+___
+
+###  isQueryJobDetail
+
+▸ **isQueryJobDetail**(`obj`: any): *obj is QueryJobDetail*
+
+Defined in src/query/query_service_models.ts:195
+
+Convenience type guard function to check if a object conforms to the
+`QueryJobDetail` interface
+
+**Parameters:**
+
+Name | Type | Description |
+------ | ------ | ------ |
+`obj` | any | object to be checked |
+
+**Returns:** *obj is QueryJobDetail*
+
+true is the interface is satisfied
+
+___
+
+###  isQueryJobResp
+
+▸ **isQueryJobResp**(`obj`: any): *obj is QueryJobResp*
+
+Defined in src/query/query_service_models.ts:116
+
+Convenience type guard function to check if a object conforms to the
+`QueryJobResp` interface.
+
+**Parameters:**
+
+Name | Type | Description |
+------ | ------ | ------ |
+`obj` | any | object to be checked |
+
+**Returns:** *obj is QueryJobResp*
+
+true if the interface is satisfied
+
+___
+
+###  isQueryParams
+
+▸ **isQueryParams**(`obj`: any): *obj is QueryParams*
+
+Defined in src/query/query_service_models.ts:68
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`obj` | any |
+
+**Returns:** *obj is QueryParams*
+
+___
+
+###  isQueryResultResp
+
+▸ **isQueryResultResp**(`obj`: any): *obj is QueryResultResp*
+
+Defined in src/query/query_service_models.ts:264
+
+Convenienece method to check if an object conforms to the `QueryResultResp` interface
+
+**Parameters:**
+
+Name | Type | Description |
+------ | ------ | ------ |
+`obj` | any | object to be checked |
+
+**Returns:** *obj is QueryResultResp*
+
+true if the interface is satisfied
+
+___
+
+###  setLogLevel
+
+▸ **setLogLevel**(`level`: [logLevel](enums/loglevel.md)): *void*
+
+Defined in src/commonlogger.ts:63
+
+Change the log level of the common logger at runtime
+
+**Parameters:**
+
+Name | Type | Description |
+------ | ------ | ------ |
+`level` | [logLevel](enums/loglevel.md) |   |
+
+**Returns:** *void*
+
+___
+
+###  uuid
+
+▸ **uuid**(): *string*
+
+Defined in src/query/query_service_client.ts:27
+
+**Returns:** *string*
+
+## Object literals
+
+### `Const` cortexConstants
+
+### ▪ **cortexConstants**: *object*
+
+Defined in src/constants.ts:21
+
+Cortex constants
+
+###  DEV_TOKEN_PROVIDER
+
+• **DEV_TOKEN_PROVIDER**: *string* = "https://app.developers.paloaltonetworks.com/request_token"
+
+Defined in src/constants.ts:64
+
+URL of the Palo Alto Networks Developers Relations developer token service
+
+###  EP_QUERY
+
+• **EP_QUERY**: *string* = "/query/v2"
+
+Defined in src/constants.ts:42
+
+API path for the Cortex Query Service
+
+###  EP_SCHEMA
+
+• **EP_SCHEMA**: *string* = "/schema/v2/schemas"
+
+Defined in src/constants.ts:38
+
+API path for the Cortex Schema Service
+
+###  IDP_AUTH_URL
+
+• **IDP_AUTH_URL**: *string* = "https://identity.paloaltonetworks.com/as/authorization.oauth2"
+
+Defined in src/constants.ts:60
+
+Identity provider URL for token operations
+
+###  IDP_REVOKE_URL
+
+• **IDP_REVOKE_URL**: *string* = "https://api.paloaltonetworks.com/api/oauth2/RevokeToken"
+
+Defined in src/constants.ts:56
+
+Identity provider URL for token revoke operations
+
+###  IDP_TOKEN_URL
+
+• **IDP_TOKEN_URL**: *string* = "https://api.paloaltonetworks.com/api/oauth2/RequestToken"
+
+Defined in src/constants.ts:52
+
+Identity provider URL for authentication requests
+
+▪ **APIEPMAP**: *object*
+
+Defined in src/constants.ts:25
+
+Map that links Cortex Data Lake regions with their corresponding FQDNs
+
+* **americas**: *string* = USFQDN
+
+* **europe**: *string* = EUFQDN
+
+▪ **OAUTH2SCOPEMAP**: *object*
+
+Defined in src/constants.ts:46
+
+OAuth2 Identity Provider scopes for the Cortex Data Lake
+
+* **ls-read**: *string* = "logging-service:read"

@@ -1,4 +1,4 @@
-[pan-cortex-data-lake](../README.md) › ["http2client"](../modules/_http2client_.md) › [Http2Fetch](_http2client_.http2fetch.md)
+[pan-cortex-data-lake](../README.md) › [Http2Fetch](http2fetch.md)
 
 # Class: Http2Fetch
 
@@ -12,22 +12,22 @@ Class that implements a HTTP2 fetch object
 
 ### Constructors
 
-* [constructor](_http2client_.http2fetch.md#constructor)
+* [constructor](http2fetch.md#constructor)
 
 ### Methods
 
-* [close](_http2client_.http2fetch.md#close)
-* [delete](_http2client_.http2fetch.md#delete)
-* [get](_http2client_.http2fetch.md#get)
-* [init](_http2client_.http2fetch.md#init)
-* [post](_http2client_.http2fetch.md#post)
-* [put](_http2client_.http2fetch.md#put)
+* [close](http2fetch.md#close)
+* [delete](http2fetch.md#delete)
+* [get](http2fetch.md#get)
+* [init](http2fetch.md#init)
+* [post](http2fetch.md#post)
+* [put](http2fetch.md#put)
 
 ## Constructors
 
 ###  constructor
 
-\+ **new Http2Fetch**(`opts?`: [Http2FetchOpts](../interfaces/_http2client_.http2fetchopts.md)): *[Http2Fetch](_http2client_.http2fetch.md)*
+\+ **new Http2Fetch**(`opts?`: [Http2FetchOpts](../interfaces/http2fetchopts.md)): *[Http2Fetch](http2fetch.md)*
 
 Defined in src/http2client.ts:103
 
@@ -38,9 +38,9 @@ options. You must provide, at least, `cortexBaseFqdn` or `cortexDefCredentials`
 
 Name | Type | Description |
 ------ | ------ | ------ |
-`opts?` | [Http2FetchOpts](../interfaces/_http2client_.http2fetchopts.md) | configuration options for this object |
+`opts?` | [Http2FetchOpts](../interfaces/http2fetchopts.md) | configuration options for this object |
 
-**Returns:** *[Http2Fetch](_http2client_.http2fetch.md)*
+**Returns:** *[Http2Fetch](http2fetch.md)*
 
 an instantiated `Http2Fetch` object
 
@@ -66,7 +66,7 @@ ___
 
 ###  delete
 
-▸ **delete**(`path`: string, `opts?`: http2.ClientSessionRequestOptions, `cred?`: [CredentialTuple](../modules/_http2client_.md#credentialtuple)): *Promise‹object›*
+▸ **delete**(`path`: string, `opts?`: http2.ClientSessionRequestOptions, `cred?`: [CredentialTuple](../README.md#credentialtuple)): *Promise‹object›*
 
 Defined in src/http2client.ts:367
 
@@ -78,7 +78,7 @@ Name | Type | Description |
 ------ | ------ | ------ |
 `path` | string | relative path of the endpoint to consume |
 `opts?` | http2.ClientSessionRequestOptions | options for the HTTP2 request |
-`cred?` | [CredentialTuple](../modules/_http2client_.md#credentialtuple) | optional `Credentials` object for this call to override default one |
+`cred?` | [CredentialTuple](../README.md#credentialtuple) | optional `Credentials` object for this call to override default one |
 
 **Returns:** *Promise‹object›*
 
@@ -88,7 +88,7 @@ ___
 
 ###  get
 
-▸ **get**(`path`: string, `opts?`: http2.ClientSessionRequestOptions, `cred?`: [CredentialTuple](../modules/_http2client_.md#credentialtuple)): *Promise‹object›*
+▸ **get**(`path`: string, `opts?`: http2.ClientSessionRequestOptions, `cred?`: [CredentialTuple](../README.md#credentialtuple)): *Promise‹object›*
 
 Defined in src/http2client.ts:356
 
@@ -100,7 +100,7 @@ Name | Type | Description |
 ------ | ------ | ------ |
 `path` | string | relative path of the endpoint to consume |
 `opts?` | http2.ClientSessionRequestOptions | options for the HTTP2 request |
-`cred?` | [CredentialTuple](../modules/_http2client_.md#credentialtuple) | optional `Credentials` object for this call to override default one |
+`cred?` | [CredentialTuple](../README.md#credentialtuple) | optional `Credentials` object for this call to override default one |
 
 **Returns:** *Promise‹object›*
 
@@ -110,7 +110,7 @@ ___
 
 ###  init
 
-▸ **init**(`c?`: [CredentialTuple](../modules/_http2client_.md#credentialtuple)): *Promise‹void›*
+▸ **init**(`c?`: [CredentialTuple](../README.md#credentialtuple)): *Promise‹void›*
 
 Defined in src/http2client.ts:121
 
@@ -118,7 +118,7 @@ Defined in src/http2client.ts:121
 
 Name | Type |
 ------ | ------ |
-`c?` | [CredentialTuple](../modules/_http2client_.md#credentialtuple) |
+`c?` | [CredentialTuple](../README.md#credentialtuple) |
 
 **Returns:** *Promise‹void›*
 
@@ -126,7 +126,7 @@ ___
 
 ###  post
 
-▸ **post**(`path`: string, `body`: any, `contentType`: string, `opts?`: http2.ClientSessionRequestOptions, `cred?`: [CredentialTuple](../modules/_http2client_.md#credentialtuple)): *Promise‹object›*
+▸ **post**(`path`: string, `body`: any, `contentType`: string, `opts?`: http2.ClientSessionRequestOptions, `cred?`: [CredentialTuple](../README.md#credentialtuple)): *Promise‹object›*
 
 Defined in src/http2client.ts:379
 
@@ -140,7 +140,7 @@ Name | Type | Default | Description |
 `body` | any | - | body content to be send |
 `contentType` | string | "application/json" | - |
 `opts?` | http2.ClientSessionRequestOptions | - | options for the HTTP2 request |
-`cred?` | [CredentialTuple](../modules/_http2client_.md#credentialtuple) | - | optional `Credentials` object for this call to override default one |
+`cred?` | [CredentialTuple](../README.md#credentialtuple) | - | optional `Credentials` object for this call to override default one |
 
 **Returns:** *Promise‹object›*
 
@@ -150,7 +150,7 @@ ___
 
 ###  put
 
-▸ **put**(`path`: string, `body`: any, `contentType`: string, `opts?`: http2.ClientSessionRequestOptions, `cred?`: [CredentialTuple](../modules/_http2client_.md#credentialtuple)): *Promise‹object›*
+▸ **put**(`path`: string, `body`: any, `contentType`: string, `opts?`: http2.ClientSessionRequestOptions, `cred?`: [CredentialTuple](../README.md#credentialtuple)): *Promise‹object›*
 
 Defined in src/http2client.ts:391
 
@@ -164,7 +164,7 @@ Name | Type | Default | Description |
 `body` | any | - | body content to be send |
 `contentType` | string | "application/json" | - |
 `opts?` | http2.ClientSessionRequestOptions | - | options for the HTTP2 request |
-`cred?` | [CredentialTuple](../modules/_http2client_.md#credentialtuple) | - | optional `Credentials` object for this call to override default one |
+`cred?` | [CredentialTuple](../README.md#credentialtuple) | - | optional `Credentials` object for this call to override default one |
 
 **Returns:** *Promise‹object›*
 

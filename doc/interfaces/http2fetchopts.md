@@ -1,4 +1,4 @@
-[pan-cortex-data-lake](../README.md) › ["http2client"](../modules/_http2client_.md) › [Http2FetchOpts](_http2client_.http2fetchopts.md)
+[pan-cortex-data-lake](../README.md) › [Http2FetchOpts](http2fetchopts.md)
 
 # Interface: Http2FetchOpts
 
@@ -16,59 +16,59 @@ Options to configure a `Http2Fetch` object
 
 ### Properties
 
-* [ALPNProtocols](_http2client_.http2fetchopts.md#optional-alpnprotocols)
-* [SNICallback](_http2client_.http2fetchopts.md#optional-snicallback)
-* [ca](_http2client_.http2fetchopts.md#optional-ca)
-* [cert](_http2client_.http2fetchopts.md#optional-cert)
-* [checkServerIdentity](_http2client_.http2fetchopts.md#optional-checkserveridentity)
-* [ciphers](_http2client_.http2fetchopts.md#optional-ciphers)
-* [clientCertEngine](_http2client_.http2fetchopts.md#optional-clientcertengine)
-* [cortexBaseFqdn](_http2client_.http2fetchopts.md#optional-cortexbasefqdn)
-* [cortexDefCredentials](_http2client_.http2fetchopts.md#optional-cortexdefcredentials)
-* [createConnection](_http2client_.http2fetchopts.md#optional-createconnection)
-* [crl](_http2client_.http2fetchopts.md#optional-crl)
-* [dhparam](_http2client_.http2fetchopts.md#optional-dhparam)
-* [ecdhCurve](_http2client_.http2fetchopts.md#optional-ecdhcurve)
-* [enableTrace](_http2client_.http2fetchopts.md#optional-enabletrace)
-* [honorCipherOrder](_http2client_.http2fetchopts.md#optional-honorcipherorder)
-* [host](_http2client_.http2fetchopts.md#optional-host)
-* [key](_http2client_.http2fetchopts.md#optional-key)
-* [lookup](_http2client_.http2fetchopts.md#optional-lookup)
-* [maxDeflateDynamicTableSize](_http2client_.http2fetchopts.md#optional-maxdeflatedynamictablesize)
-* [maxHeaderListPairs](_http2client_.http2fetchopts.md#optional-maxheaderlistpairs)
-* [maxOutstandingPings](_http2client_.http2fetchopts.md#optional-maxoutstandingpings)
-* [maxReservedRemoteStreams](_http2client_.http2fetchopts.md#optional-maxreservedremotestreams)
-* [maxSendHeaderBlockLength](_http2client_.http2fetchopts.md#optional-maxsendheaderblocklength)
-* [maxSessionMemory](_http2client_.http2fetchopts.md#optional-maxsessionmemory)
-* [maxVersion](_http2client_.http2fetchopts.md#optional-maxversion)
-* [minDHSize](_http2client_.http2fetchopts.md#optional-mindhsize)
-* [minVersion](_http2client_.http2fetchopts.md#optional-minversion)
-* [paddingStrategy](_http2client_.http2fetchopts.md#optional-paddingstrategy)
-* [passphrase](_http2client_.http2fetchopts.md#optional-passphrase)
-* [path](_http2client_.http2fetchopts.md#optional-path)
-* [peerMaxConcurrentStreams](_http2client_.http2fetchopts.md#optional-peermaxconcurrentstreams)
-* [pfx](_http2client_.http2fetchopts.md#optional-pfx)
-* [port](_http2client_.http2fetchopts.md#optional-port)
-* [privateKeyEngine](_http2client_.http2fetchopts.md#optional-privatekeyengine)
-* [privateKeyIdentifier](_http2client_.http2fetchopts.md#optional-privatekeyidentifier)
-* [protocol](_http2client_.http2fetchopts.md#optional-protocol)
-* [rejectUnauthorized](_http2client_.http2fetchopts.md#optional-rejectunauthorized)
-* [requestCert](_http2client_.http2fetchopts.md#optional-requestcert)
-* [secureContext](_http2client_.http2fetchopts.md#optional-securecontext)
-* [secureOptions](_http2client_.http2fetchopts.md#optional-secureoptions)
-* [secureProtocol](_http2client_.http2fetchopts.md#optional-secureprotocol)
-* [servername](_http2client_.http2fetchopts.md#optional-servername)
-* [session](_http2client_.http2fetchopts.md#optional-session)
-* [sessionIdContext](_http2client_.http2fetchopts.md#optional-sessionidcontext)
-* [settings](_http2client_.http2fetchopts.md#optional-settings)
-* [sigalgs](_http2client_.http2fetchopts.md#optional-sigalgs)
-* [socket](_http2client_.http2fetchopts.md#optional-socket)
-* [timeout](_http2client_.http2fetchopts.md#optional-timeout)
+* [ALPNProtocols](http2fetchopts.md#optional-alpnprotocols)
+* [SNICallback](http2fetchopts.md#optional-snicallback)
+* [ca](http2fetchopts.md#optional-ca)
+* [cert](http2fetchopts.md#optional-cert)
+* [checkServerIdentity](http2fetchopts.md#optional-checkserveridentity)
+* [ciphers](http2fetchopts.md#optional-ciphers)
+* [clientCertEngine](http2fetchopts.md#optional-clientcertengine)
+* [cortexBaseFqdn](http2fetchopts.md#optional-cortexbasefqdn)
+* [cortexDefCredentials](http2fetchopts.md#optional-cortexdefcredentials)
+* [createConnection](http2fetchopts.md#optional-createconnection)
+* [crl](http2fetchopts.md#optional-crl)
+* [dhparam](http2fetchopts.md#optional-dhparam)
+* [ecdhCurve](http2fetchopts.md#optional-ecdhcurve)
+* [enableTrace](http2fetchopts.md#optional-enabletrace)
+* [honorCipherOrder](http2fetchopts.md#optional-honorcipherorder)
+* [host](http2fetchopts.md#optional-host)
+* [key](http2fetchopts.md#optional-key)
+* [lookup](http2fetchopts.md#optional-lookup)
+* [maxDeflateDynamicTableSize](http2fetchopts.md#optional-maxdeflatedynamictablesize)
+* [maxHeaderListPairs](http2fetchopts.md#optional-maxheaderlistpairs)
+* [maxOutstandingPings](http2fetchopts.md#optional-maxoutstandingpings)
+* [maxReservedRemoteStreams](http2fetchopts.md#optional-maxreservedremotestreams)
+* [maxSendHeaderBlockLength](http2fetchopts.md#optional-maxsendheaderblocklength)
+* [maxSessionMemory](http2fetchopts.md#optional-maxsessionmemory)
+* [maxVersion](http2fetchopts.md#optional-maxversion)
+* [minDHSize](http2fetchopts.md#optional-mindhsize)
+* [minVersion](http2fetchopts.md#optional-minversion)
+* [paddingStrategy](http2fetchopts.md#optional-paddingstrategy)
+* [passphrase](http2fetchopts.md#optional-passphrase)
+* [path](http2fetchopts.md#optional-path)
+* [peerMaxConcurrentStreams](http2fetchopts.md#optional-peermaxconcurrentstreams)
+* [pfx](http2fetchopts.md#optional-pfx)
+* [port](http2fetchopts.md#optional-port)
+* [privateKeyEngine](http2fetchopts.md#optional-privatekeyengine)
+* [privateKeyIdentifier](http2fetchopts.md#optional-privatekeyidentifier)
+* [protocol](http2fetchopts.md#optional-protocol)
+* [rejectUnauthorized](http2fetchopts.md#optional-rejectunauthorized)
+* [requestCert](http2fetchopts.md#optional-requestcert)
+* [secureContext](http2fetchopts.md#optional-securecontext)
+* [secureOptions](http2fetchopts.md#optional-secureoptions)
+* [secureProtocol](http2fetchopts.md#optional-secureprotocol)
+* [servername](http2fetchopts.md#optional-servername)
+* [session](http2fetchopts.md#optional-session)
+* [sessionIdContext](http2fetchopts.md#optional-sessionidcontext)
+* [settings](http2fetchopts.md#optional-settings)
+* [sigalgs](http2fetchopts.md#optional-sigalgs)
+* [socket](http2fetchopts.md#optional-socket)
+* [timeout](http2fetchopts.md#optional-timeout)
 
 ### Methods
 
-* [pskCallback](_http2client_.http2fetchopts.md#optional-pskcallback)
-* [selectPadding](_http2client_.http2fetchopts.md#optional-selectpadding)
+* [pskCallback](http2fetchopts.md#optional-pskcallback)
+* [selectPadding](http2fetchopts.md#optional-selectpadding)
 
 ## Properties
 
@@ -76,7 +76,7 @@ Options to configure a `Http2Fetch` object
 
 • **ALPNProtocols**? : *string[] | Uint8Array[] | Uint8Array*
 
-*Inherited from [Http2FetchOpts](_http2client_.http2fetchopts.md).[ALPNProtocols](_http2client_.http2fetchopts.md#optional-alpnprotocols)*
+*Inherited from [Http2FetchOpts](http2fetchopts.md).[ALPNProtocols](http2fetchopts.md#optional-alpnprotocols)*
 
 Defined in node_modules/@types/node/tls.d.ts:359
 
@@ -89,7 +89,7 @@ ___
 
 • **SNICallback**? : *undefined | function*
 
-*Inherited from [Http2FetchOpts](_http2client_.http2fetchopts.md).[SNICallback](_http2client_.http2fetchopts.md#optional-snicallback)*
+*Inherited from [Http2FetchOpts](http2fetchopts.md).[SNICallback](http2fetchopts.md#optional-snicallback)*
 
 Defined in node_modules/@types/node/tls.d.ts:369
 
@@ -107,7 +107,7 @@ ___
 
 • **ca**? : *string | Buffer | Array‹string | Buffer›*
 
-*Inherited from [Http2FetchOpts](_http2client_.http2fetchopts.md).[ca](_http2client_.http2fetchopts.md#optional-ca)*
+*Inherited from [Http2FetchOpts](http2fetchopts.md).[ca](http2fetchopts.md#optional-ca)*
 
 Defined in node_modules/@types/node/tls.d.ts:560
 
@@ -121,7 +121,7 @@ ___
 
 • **cert**? : *string | Buffer | Array‹string | Buffer›*
 
-*Inherited from [Http2FetchOpts](_http2client_.http2fetchopts.md).[cert](_http2client_.http2fetchopts.md#optional-cert)*
+*Inherited from [Http2FetchOpts](http2fetchopts.md).[cert](http2fetchopts.md#optional-cert)*
 
 Defined in node_modules/@types/node/tls.d.ts:572
 
@@ -141,7 +141,7 @@ ___
 
 • **checkServerIdentity**? : *typeof checkServerIdentity*
 
-*Inherited from [Http2FetchOpts](_http2client_.http2fetchopts.md).[checkServerIdentity](_http2client_.http2fetchopts.md#optional-checkserveridentity)*
+*Inherited from [Http2FetchOpts](http2fetchopts.md).[checkServerIdentity](http2fetchopts.md#optional-checkserveridentity)*
 
 Defined in node_modules/@types/node/tls.d.ts:438
 
@@ -151,7 +151,7 @@ ___
 
 • **ciphers**? : *undefined | string*
 
-*Inherited from [Http2FetchOpts](_http2client_.http2fetchopts.md).[ciphers](_http2client_.http2fetchopts.md#optional-ciphers)*
+*Inherited from [Http2FetchOpts](http2fetchopts.md).[ciphers](http2fetchopts.md#optional-ciphers)*
 
 Defined in node_modules/@types/node/tls.d.ts:586
 
@@ -166,7 +166,7 @@ ___
 
 • **clientCertEngine**? : *undefined | string*
 
-*Inherited from [Http2FetchOpts](_http2client_.http2fetchopts.md).[clientCertEngine](_http2client_.http2fetchopts.md#optional-clientcertengine)*
+*Inherited from [Http2FetchOpts](http2fetchopts.md).[clientCertEngine](http2fetchopts.md#optional-clientcertengine)*
 
 Defined in node_modules/@types/node/tls.d.ts:590
 
@@ -187,7 +187,7 @@ ___
 
 ### `Optional` cortexDefCredentials
 
-• **cortexDefCredentials**? : *[Credentials](_index_.credentials.md)*
+• **cortexDefCredentials**? : *[Credentials](credentials.md)*
 
 Defined in src/http2client.ts:69
 
@@ -199,7 +199,7 @@ ___
 
 • **createConnection**? : *undefined | function*
 
-*Inherited from [Http2FetchOpts](_http2client_.http2fetchopts.md).[createConnection](_http2client_.http2fetchopts.md#optional-createconnection)*
+*Inherited from [Http2FetchOpts](http2fetchopts.md).[createConnection](http2fetchopts.md#optional-createconnection)*
 
 *Overrides void*
 
@@ -211,7 +211,7 @@ ___
 
 • **crl**? : *string | Buffer | Array‹string | Buffer›*
 
-*Inherited from [Http2FetchOpts](_http2client_.http2fetchopts.md).[crl](_http2client_.http2fetchopts.md#optional-crl)*
+*Inherited from [Http2FetchOpts](http2fetchopts.md).[crl](http2fetchopts.md#optional-crl)*
 
 Defined in node_modules/@types/node/tls.d.ts:594
 
@@ -223,7 +223,7 @@ ___
 
 • **dhparam**? : *string | Buffer*
 
-*Inherited from [Http2FetchOpts](_http2client_.http2fetchopts.md).[dhparam](_http2client_.http2fetchopts.md#optional-dhparam)*
+*Inherited from [Http2FetchOpts](http2fetchopts.md).[dhparam](http2fetchopts.md#optional-dhparam)*
 
 Defined in node_modules/@types/node/tls.d.ts:603
 
@@ -240,7 +240,7 @@ ___
 
 • **ecdhCurve**? : *undefined | string*
 
-*Inherited from [Http2FetchOpts](_http2client_.http2fetchopts.md).[ecdhCurve](_http2client_.http2fetchopts.md#optional-ecdhcurve)*
+*Inherited from [Http2FetchOpts](http2fetchopts.md).[ecdhCurve](http2fetchopts.md#optional-ecdhcurve)*
 
 Defined in node_modules/@types/node/tls.d.ts:613
 
@@ -258,7 +258,7 @@ ___
 
 • **enableTrace**? : *undefined | false | true*
 
-*Inherited from [Http2FetchOpts](_http2client_.http2fetchopts.md).[enableTrace](_http2client_.http2fetchopts.md#optional-enabletrace)*
+*Inherited from [Http2FetchOpts](http2fetchopts.md).[enableTrace](http2fetchopts.md#optional-enabletrace)*
 
 Defined in node_modules/@types/node/tls.d.ts:348
 
@@ -273,7 +273,7 @@ ___
 
 • **honorCipherOrder**? : *undefined | false | true*
 
-*Inherited from [Http2FetchOpts](_http2client_.http2fetchopts.md).[honorCipherOrder](_http2client_.http2fetchopts.md#optional-honorcipherorder)*
+*Inherited from [Http2FetchOpts](http2fetchopts.md).[honorCipherOrder](http2fetchopts.md#optional-honorcipherorder)*
 
 Defined in node_modules/@types/node/tls.d.ts:619
 
@@ -287,7 +287,7 @@ ___
 
 • **host**? : *undefined | string*
 
-*Inherited from [Http2FetchOpts](_http2client_.http2fetchopts.md).[host](_http2client_.http2fetchopts.md#optional-host)*
+*Inherited from [Http2FetchOpts](http2fetchopts.md).[host](http2fetchopts.md#optional-host)*
 
 Defined in node_modules/@types/node/tls.d.ts:434
 
@@ -297,7 +297,7 @@ ___
 
 • **key**? : *string | Buffer | Array‹Buffer | KeyObject›*
 
-*Inherited from [Http2FetchOpts](_http2client_.http2fetchopts.md).[key](_http2client_.http2fetchopts.md#optional-key)*
+*Inherited from [Http2FetchOpts](http2fetchopts.md).[key](http2fetchopts.md#optional-key)*
 
 Defined in node_modules/@types/node/tls.d.ts:630
 
@@ -316,7 +316,7 @@ ___
 
 • **lookup**? : *net.LookupFunction*
 
-*Inherited from [Http2FetchOpts](_http2client_.http2fetchopts.md).[lookup](_http2client_.http2fetchopts.md#optional-lookup)*
+*Inherited from [Http2FetchOpts](http2fetchopts.md).[lookup](http2fetchopts.md#optional-lookup)*
 
 Defined in node_modules/@types/node/tls.d.ts:442
 
@@ -326,9 +326,9 @@ ___
 
 • **maxDeflateDynamicTableSize**? : *undefined | number*
 
-*Inherited from [Http2FetchOpts](_http2client_.http2fetchopts.md).[maxDeflateDynamicTableSize](_http2client_.http2fetchopts.md#optional-maxdeflatedynamictablesize)*
+*Inherited from [Http2FetchOpts](http2fetchopts.md).[maxDeflateDynamicTableSize](http2fetchopts.md#optional-maxdeflatedynamictablesize)*
 
-*Overrides [Http2FetchOpts](_http2client_.http2fetchopts.md).[maxDeflateDynamicTableSize](_http2client_.http2fetchopts.md#optional-maxdeflatedynamictablesize)*
+*Overrides [Http2FetchOpts](http2fetchopts.md).[maxDeflateDynamicTableSize](http2fetchopts.md#optional-maxdeflatedynamictablesize)*
 
 Defined in node_modules/@types/node/http2.d.ts:427
 
@@ -338,9 +338,9 @@ ___
 
 • **maxHeaderListPairs**? : *undefined | number*
 
-*Inherited from [Http2FetchOpts](_http2client_.http2fetchopts.md).[maxHeaderListPairs](_http2client_.http2fetchopts.md#optional-maxheaderlistpairs)*
+*Inherited from [Http2FetchOpts](http2fetchopts.md).[maxHeaderListPairs](http2fetchopts.md#optional-maxheaderlistpairs)*
 
-*Overrides [Http2FetchOpts](_http2client_.http2fetchopts.md).[maxHeaderListPairs](_http2client_.http2fetchopts.md#optional-maxheaderlistpairs)*
+*Overrides [Http2FetchOpts](http2fetchopts.md).[maxHeaderListPairs](http2fetchopts.md#optional-maxheaderlistpairs)*
 
 Defined in node_modules/@types/node/http2.d.ts:429
 
@@ -350,9 +350,9 @@ ___
 
 • **maxOutstandingPings**? : *undefined | number*
 
-*Inherited from [Http2FetchOpts](_http2client_.http2fetchopts.md).[maxOutstandingPings](_http2client_.http2fetchopts.md#optional-maxoutstandingpings)*
+*Inherited from [Http2FetchOpts](http2fetchopts.md).[maxOutstandingPings](http2fetchopts.md#optional-maxoutstandingpings)*
 
-*Overrides [Http2FetchOpts](_http2client_.http2fetchopts.md).[maxOutstandingPings](_http2client_.http2fetchopts.md#optional-maxoutstandingpings)*
+*Overrides [Http2FetchOpts](http2fetchopts.md).[maxOutstandingPings](http2fetchopts.md#optional-maxoutstandingpings)*
 
 Defined in node_modules/@types/node/http2.d.ts:430
 
@@ -362,9 +362,9 @@ ___
 
 • **maxReservedRemoteStreams**? : *undefined | number*
 
-*Inherited from [Http2FetchOpts](_http2client_.http2fetchopts.md).[maxReservedRemoteStreams](_http2client_.http2fetchopts.md#optional-maxreservedremotestreams)*
+*Inherited from [Http2FetchOpts](http2fetchopts.md).[maxReservedRemoteStreams](http2fetchopts.md#optional-maxreservedremotestreams)*
 
-*Overrides [Http2FetchOpts](_http2client_.http2fetchopts.md).[maxReservedRemoteStreams](_http2client_.http2fetchopts.md#optional-maxreservedremotestreams)*
+*Overrides [Http2FetchOpts](http2fetchopts.md).[maxReservedRemoteStreams](http2fetchopts.md#optional-maxreservedremotestreams)*
 
 Defined in node_modules/@types/node/http2.d.ts:441
 
@@ -374,9 +374,9 @@ ___
 
 • **maxSendHeaderBlockLength**? : *undefined | number*
 
-*Inherited from [Http2FetchOpts](_http2client_.http2fetchopts.md).[maxSendHeaderBlockLength](_http2client_.http2fetchopts.md#optional-maxsendheaderblocklength)*
+*Inherited from [Http2FetchOpts](http2fetchopts.md).[maxSendHeaderBlockLength](http2fetchopts.md#optional-maxsendheaderblocklength)*
 
-*Overrides [Http2FetchOpts](_http2client_.http2fetchopts.md).[maxSendHeaderBlockLength](_http2client_.http2fetchopts.md#optional-maxsendheaderblocklength)*
+*Overrides [Http2FetchOpts](http2fetchopts.md).[maxSendHeaderBlockLength](http2fetchopts.md#optional-maxsendheaderblocklength)*
 
 Defined in node_modules/@types/node/http2.d.ts:431
 
@@ -386,9 +386,9 @@ ___
 
 • **maxSessionMemory**? : *undefined | number*
 
-*Inherited from [Http2FetchOpts](_http2client_.http2fetchopts.md).[maxSessionMemory](_http2client_.http2fetchopts.md#optional-maxsessionmemory)*
+*Inherited from [Http2FetchOpts](http2fetchopts.md).[maxSessionMemory](http2fetchopts.md#optional-maxsessionmemory)*
 
-*Overrides [Http2FetchOpts](_http2client_.http2fetchopts.md).[maxSessionMemory](_http2client_.http2fetchopts.md#optional-maxsessionmemory)*
+*Overrides [Http2FetchOpts](http2fetchopts.md).[maxSessionMemory](http2fetchopts.md#optional-maxsessionmemory)*
 
 Defined in node_modules/@types/node/http2.d.ts:428
 
@@ -398,7 +398,7 @@ ___
 
 • **maxVersion**? : *SecureVersion*
 
-*Inherited from [Http2FetchOpts](_http2client_.http2fetchopts.md).[maxVersion](_http2client_.http2fetchopts.md#optional-maxversion)*
+*Inherited from [Http2FetchOpts](http2fetchopts.md).[maxVersion](http2fetchopts.md#optional-maxversion)*
 
 Defined in node_modules/@types/node/tls.d.ts:650
 
@@ -415,7 +415,7 @@ ___
 
 • **minDHSize**? : *undefined | number*
 
-*Inherited from [Http2FetchOpts](_http2client_.http2fetchopts.md).[minDHSize](_http2client_.http2fetchopts.md#optional-mindhsize)*
+*Inherited from [Http2FetchOpts](http2fetchopts.md).[minDHSize](http2fetchopts.md#optional-mindhsize)*
 
 Defined in node_modules/@types/node/tls.d.ts:441
 
@@ -425,7 +425,7 @@ ___
 
 • **minVersion**? : *SecureVersion*
 
-*Inherited from [Http2FetchOpts](_http2client_.http2fetchopts.md).[minVersion](_http2client_.http2fetchopts.md#optional-minversion)*
+*Inherited from [Http2FetchOpts](http2fetchopts.md).[minVersion](http2fetchopts.md#optional-minversion)*
 
 Defined in node_modules/@types/node/tls.d.ts:661
 
@@ -444,9 +444,9 @@ ___
 
 • **paddingStrategy**? : *undefined | number*
 
-*Inherited from [Http2FetchOpts](_http2client_.http2fetchopts.md).[paddingStrategy](_http2client_.http2fetchopts.md#optional-paddingstrategy)*
+*Inherited from [Http2FetchOpts](http2fetchopts.md).[paddingStrategy](http2fetchopts.md#optional-paddingstrategy)*
 
-*Overrides [Http2FetchOpts](_http2client_.http2fetchopts.md).[paddingStrategy](_http2client_.http2fetchopts.md#optional-paddingstrategy)*
+*Overrides [Http2FetchOpts](http2fetchopts.md).[paddingStrategy](http2fetchopts.md#optional-paddingstrategy)*
 
 Defined in node_modules/@types/node/http2.d.ts:432
 
@@ -456,7 +456,7 @@ ___
 
 • **passphrase**? : *undefined | string*
 
-*Inherited from [Http2FetchOpts](_http2client_.http2fetchopts.md).[passphrase](_http2client_.http2fetchopts.md#optional-passphrase)*
+*Inherited from [Http2FetchOpts](http2fetchopts.md).[passphrase](http2fetchopts.md#optional-passphrase)*
 
 Defined in node_modules/@types/node/tls.d.ts:665
 
@@ -468,7 +468,7 @@ ___
 
 • **path**? : *undefined | string*
 
-*Inherited from [Http2FetchOpts](_http2client_.http2fetchopts.md).[path](_http2client_.http2fetchopts.md#optional-path)*
+*Inherited from [Http2FetchOpts](http2fetchopts.md).[path](http2fetchopts.md#optional-path)*
 
 Defined in node_modules/@types/node/tls.d.ts:436
 
@@ -478,9 +478,9 @@ ___
 
 • **peerMaxConcurrentStreams**? : *undefined | number*
 
-*Inherited from [Http2FetchOpts](_http2client_.http2fetchopts.md).[peerMaxConcurrentStreams](_http2client_.http2fetchopts.md#optional-peermaxconcurrentstreams)*
+*Inherited from [Http2FetchOpts](http2fetchopts.md).[peerMaxConcurrentStreams](http2fetchopts.md#optional-peermaxconcurrentstreams)*
 
-*Overrides [Http2FetchOpts](_http2client_.http2fetchopts.md).[peerMaxConcurrentStreams](_http2client_.http2fetchopts.md#optional-peermaxconcurrentstreams)*
+*Overrides [Http2FetchOpts](http2fetchopts.md).[peerMaxConcurrentStreams](http2fetchopts.md#optional-peermaxconcurrentstreams)*
 
 Defined in node_modules/@types/node/http2.d.ts:433
 
@@ -490,7 +490,7 @@ ___
 
 • **pfx**? : *string | Buffer | Array‹string | Buffer | PxfObject›*
 
-*Inherited from [Http2FetchOpts](_http2client_.http2fetchopts.md).[pfx](_http2client_.http2fetchopts.md#optional-pfx)*
+*Inherited from [Http2FetchOpts](http2fetchopts.md).[pfx](http2fetchopts.md#optional-pfx)*
 
 Defined in node_modules/@types/node/tls.d.ts:676
 
@@ -509,7 +509,7 @@ ___
 
 • **port**? : *undefined | number*
 
-*Inherited from [Http2FetchOpts](_http2client_.http2fetchopts.md).[port](_http2client_.http2fetchopts.md#optional-port)*
+*Inherited from [Http2FetchOpts](http2fetchopts.md).[port](http2fetchopts.md#optional-port)*
 
 Defined in node_modules/@types/node/tls.d.ts:435
 
@@ -519,7 +519,7 @@ ___
 
 • **privateKeyEngine**? : *undefined | string*
 
-*Inherited from [Http2FetchOpts](_http2client_.http2fetchopts.md).[privateKeyEngine](_http2client_.http2fetchopts.md#optional-privatekeyengine)*
+*Inherited from [Http2FetchOpts](http2fetchopts.md).[privateKeyEngine](http2fetchopts.md#optional-privatekeyengine)*
 
 Defined in node_modules/@types/node/tls.d.ts:635
 
@@ -532,7 +532,7 @@ ___
 
 • **privateKeyIdentifier**? : *undefined | string*
 
-*Inherited from [Http2FetchOpts](_http2client_.http2fetchopts.md).[privateKeyIdentifier](_http2client_.http2fetchopts.md#optional-privatekeyidentifier)*
+*Inherited from [Http2FetchOpts](http2fetchopts.md).[privateKeyIdentifier](http2fetchopts.md#optional-privatekeyidentifier)*
 
 Defined in node_modules/@types/node/tls.d.ts:641
 
@@ -546,9 +546,9 @@ ___
 
 • **protocol**? : *"http:" | "https:"*
 
-*Inherited from [Http2FetchOpts](_http2client_.http2fetchopts.md).[protocol](_http2client_.http2fetchopts.md#optional-protocol)*
+*Inherited from [Http2FetchOpts](http2fetchopts.md).[protocol](http2fetchopts.md#optional-protocol)*
 
-*Overrides [Http2FetchOpts](_http2client_.http2fetchopts.md).[protocol](_http2client_.http2fetchopts.md#optional-protocol)*
+*Overrides [Http2FetchOpts](http2fetchopts.md).[protocol](http2fetchopts.md#optional-protocol)*
 
 Defined in node_modules/@types/node/http2.d.ts:443
 
@@ -558,7 +558,7 @@ ___
 
 • **rejectUnauthorized**? : *undefined | false | true*
 
-*Inherited from [Http2FetchOpts](_http2client_.http2fetchopts.md).[rejectUnauthorized](_http2client_.http2fetchopts.md#optional-rejectunauthorized)*
+*Inherited from [Http2FetchOpts](http2fetchopts.md).[rejectUnauthorized](http2fetchopts.md#optional-rejectunauthorized)*
 
 Defined in node_modules/@types/node/tls.d.ts:376
 
@@ -574,7 +574,7 @@ ___
 
 • **requestCert**? : *undefined | false | true*
 
-*Inherited from [Http2FetchOpts](_http2client_.http2fetchopts.md).[requestCert](_http2client_.http2fetchopts.md#optional-requestcert)*
+*Inherited from [Http2FetchOpts](http2fetchopts.md).[requestCert](http2fetchopts.md#optional-requestcert)*
 
 Defined in node_modules/@types/node/tls.d.ts:354
 
@@ -588,7 +588,7 @@ ___
 
 • **secureContext**? : *SecureContext*
 
-*Inherited from [Http2FetchOpts](_http2client_.http2fetchopts.md).[secureContext](_http2client_.http2fetchopts.md#optional-securecontext)*
+*Inherited from [Http2FetchOpts](http2fetchopts.md).[secureContext](http2fetchopts.md#optional-securecontext)*
 
 Defined in node_modules/@types/node/tls.d.ts:341
 
@@ -600,7 +600,7 @@ ___
 
 • **secureOptions**? : *undefined | number*
 
-*Inherited from [Http2FetchOpts](_http2client_.http2fetchopts.md).[secureOptions](_http2client_.http2fetchopts.md#optional-secureoptions)*
+*Inherited from [Http2FetchOpts](http2fetchopts.md).[secureOptions](http2fetchopts.md#optional-secureoptions)*
 
 Defined in node_modules/@types/node/tls.d.ts:682
 
@@ -614,7 +614,7 @@ ___
 
 • **secureProtocol**? : *undefined | string*
 
-*Inherited from [Http2FetchOpts](_http2client_.http2fetchopts.md).[secureProtocol](_http2client_.http2fetchopts.md#optional-secureprotocol)*
+*Inherited from [Http2FetchOpts](http2fetchopts.md).[secureProtocol](http2fetchopts.md#optional-secureprotocol)*
 
 Defined in node_modules/@types/node/tls.d.ts:694
 
@@ -634,7 +634,7 @@ ___
 
 • **servername**? : *undefined | string*
 
-*Inherited from [Http2FetchOpts](_http2client_.http2fetchopts.md).[servername](_http2client_.http2fetchopts.md#optional-servername)*
+*Inherited from [Http2FetchOpts](http2fetchopts.md).[servername](http2fetchopts.md#optional-servername)*
 
 Defined in node_modules/@types/node/tls.d.ts:439
 
@@ -644,7 +644,7 @@ ___
 
 • **session**? : *Buffer*
 
-*Inherited from [Http2FetchOpts](_http2client_.http2fetchopts.md).[session](_http2client_.http2fetchopts.md#optional-session)*
+*Inherited from [Http2FetchOpts](http2fetchopts.md).[session](http2fetchopts.md#optional-session)*
 
 Defined in node_modules/@types/node/tls.d.ts:440
 
@@ -654,7 +654,7 @@ ___
 
 • **sessionIdContext**? : *undefined | string*
 
-*Inherited from [Http2FetchOpts](_http2client_.http2fetchopts.md).[sessionIdContext](_http2client_.http2fetchopts.md#optional-sessionidcontext)*
+*Inherited from [Http2FetchOpts](http2fetchopts.md).[sessionIdContext](http2fetchopts.md#optional-sessionidcontext)*
 
 Defined in node_modules/@types/node/tls.d.ts:699
 
@@ -667,9 +667,9 @@ ___
 
 • **settings**? : *Settings*
 
-*Inherited from [Http2FetchOpts](_http2client_.http2fetchopts.md).[settings](_http2client_.http2fetchopts.md#optional-settings)*
+*Inherited from [Http2FetchOpts](http2fetchopts.md).[settings](http2fetchopts.md#optional-settings)*
 
-*Overrides [Http2FetchOpts](_http2client_.http2fetchopts.md).[settings](_http2client_.http2fetchopts.md#optional-settings)*
+*Overrides [Http2FetchOpts](http2fetchopts.md).[settings](http2fetchopts.md#optional-settings)*
 
 Defined in node_modules/@types/node/http2.d.ts:434
 
@@ -679,7 +679,7 @@ ___
 
 • **sigalgs**? : *undefined | string*
 
-*Inherited from [Http2FetchOpts](_http2client_.http2fetchopts.md).[sigalgs](_http2client_.http2fetchopts.md#optional-sigalgs)*
+*Inherited from [Http2FetchOpts](http2fetchopts.md).[sigalgs](http2fetchopts.md#optional-sigalgs)*
 
 Defined in node_modules/@types/node/tls.d.ts:579
 
@@ -694,7 +694,7 @@ ___
 
 • **socket**? : *net.Socket*
 
-*Inherited from [Http2FetchOpts](_http2client_.http2fetchopts.md).[socket](_http2client_.http2fetchopts.md#optional-socket)*
+*Inherited from [Http2FetchOpts](http2fetchopts.md).[socket](http2fetchopts.md#optional-socket)*
 
 Defined in node_modules/@types/node/tls.d.ts:437
 
@@ -704,7 +704,7 @@ ___
 
 • **timeout**? : *undefined | number*
 
-*Inherited from [Http2FetchOpts](_http2client_.http2fetchopts.md).[timeout](_http2client_.http2fetchopts.md#optional-timeout)*
+*Inherited from [Http2FetchOpts](http2fetchopts.md).[timeout](http2fetchopts.md#optional-timeout)*
 
 Defined in node_modules/@types/node/tls.d.ts:443
 
@@ -714,7 +714,7 @@ Defined in node_modules/@types/node/tls.d.ts:443
 
 ▸ **pskCallback**(`hint`: string | null): *PSKCallbackNegotation | null*
 
-*Inherited from [Http2FetchOpts](_http2client_.http2fetchopts.md).[pskCallback](_http2client_.http2fetchopts.md#optional-pskcallback)*
+*Inherited from [Http2FetchOpts](http2fetchopts.md).[pskCallback](http2fetchopts.md#optional-pskcallback)*
 
 Defined in node_modules/@types/node/tls.d.ts:461
 
@@ -745,9 +745,9 @@ ___
 
 ▸ **selectPadding**(`frameLen`: number, `maxFrameLen`: number): *number*
 
-*Inherited from [Http2FetchOpts](_http2client_.http2fetchopts.md).[selectPadding](_http2client_.http2fetchopts.md#optional-selectpadding)*
+*Inherited from [Http2FetchOpts](http2fetchopts.md).[selectPadding](http2fetchopts.md#optional-selectpadding)*
 
-*Overrides [Http2FetchOpts](_http2client_.http2fetchopts.md).[selectPadding](_http2client_.http2fetchopts.md#optional-selectpadding)*
+*Overrides [Http2FetchOpts](http2fetchopts.md).[selectPadding](http2fetchopts.md#optional-selectpadding)*
 
 Defined in node_modules/@types/node/http2.d.ts:436
 

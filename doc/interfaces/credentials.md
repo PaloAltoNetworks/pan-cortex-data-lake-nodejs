@@ -1,4 +1,4 @@
-[pan-cortex-data-lake](../README.md) › ["index"](../modules/_index_.md) › [Credentials](_index_.credentials.md)
+[pan-cortex-data-lake](../README.md) › [Credentials](credentials.md)
 
 # Interface: Credentials
 
@@ -12,8 +12,8 @@ The basic methods expected from an object that provides credentials
 
 ### Methods
 
-* [getEntryPoint](_index_.credentials.md#getentrypoint)
-* [getToken](_index_.credentials.md#gettoken)
+* [getEntryPoint](credentials.md#getentrypoint)
+* [getToken](credentials.md#gettoken)
 
 ## Methods
 

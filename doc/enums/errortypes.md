@@ -1,4 +1,4 @@
-[pan-cortex-data-lake](../README.md) › ["sdkError"](../modules/_sdkerror_.md) › [ErrorTypes](_sdkerror_.errortypes.md)
+[pan-cortex-data-lake](../README.md) › [ErrorTypes](errortypes.md)
 
 # Enumeration: ErrorTypes
 
@@ -8,13 +8,13 @@ Types of errors that can be generated
 
 ### Enumeration members
 
-* [ComsError](_sdkerror_.errortypes.md#comserror)
-* [ConfigError](_sdkerror_.errortypes.md#configerror)
-* [HubClient](_sdkerror_.errortypes.md#hubclient)
-* [ParseError](_sdkerror_.errortypes.md#parseerror)
-* [QueryApi](_sdkerror_.errortypes.md#queryapi)
-* [QueryClient](_sdkerror_.errortypes.md#queryclient)
-* [SchemaApi](_sdkerror_.errortypes.md#schemaapi)
+* [ComsError](errortypes.md#comserror)
+* [ConfigError](errortypes.md#configerror)
+* [HubClient](errortypes.md#hubclient)
+* [ParseError](errortypes.md#parseerror)
+* [QueryApi](errortypes.md#queryapi)
+* [QueryClient](errortypes.md#queryclient)
+* [SchemaApi](errortypes.md#schemaapi)
 
 ## Enumeration members
 

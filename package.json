@@ -7,7 +7,7 @@
     "build": "npm run clean && npm run build:lib && npm run build:test && npm run build:doc",
     "build:lib": "mkdir -p lib && tsc",
     "build:test": "mkdir -p test && tsc -p mocha",
-    "build:doc": "rm -rf doc && node_modules/typedoc/bin/typedoc --out doc --excludeNotExported --excludePrivate --readme none --theme markdown",
+    "build:doc": "rm -rf doc && node_modules/typedoc/bin/typedoc --mode file --out doc --excludeNotExported --excludePrivate --readme none --theme markdown",
     "test": "mocha",
     "clean": "rm -rf test && rm -rf lib && rm -rf doc"
   },

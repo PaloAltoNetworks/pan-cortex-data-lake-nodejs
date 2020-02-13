@@ -1,4 +1,4 @@
-[pan-cortex-data-lake](../README.md) › ["http2client"](../modules/_http2client_.md) › [ErrorTools](_http2client_.errortools.md)
+[pan-cortex-data-lake](../README.md) › [ErrorTools](errortools.md)
 
 # Class: ErrorTools <**P**>
 
@@ -7,7 +7,7 @@ describes the class type that would be thrown (if needed)
 
 ## Type parameters
 
-▪ **P**: *[Error](_sdkerror_.sdkerror.md#static-error)*
+▪ **P**: *[Error](sdkerror.md#static-error)*
 
 ## Hierarchy
 
@@ -17,23 +17,23 @@ describes the class type that would be thrown (if needed)
 
 ### Constructors
 
-* [constructor](_http2client_.errortools.md#constructor)
+* [constructor](errortools.md#constructor)
 
 ### Methods
 
-* [retrier](_http2client_.errortools.md#retrier)
-* [tryAsyncOp](_http2client_.errortools.md#tryasyncop)
-* [tryDelete](_http2client_.errortools.md#trydelete)
-* [tryGet](_http2client_.errortools.md#tryget)
-* [tryOp](_http2client_.errortools.md#tryop)
-* [tryPost](_http2client_.errortools.md#trypost)
-* [tryPut](_http2client_.errortools.md#tryput)
+* [retrier](errortools.md#retrier)
+* [tryAsyncOp](errortools.md#tryasyncop)
+* [tryDelete](errortools.md#trydelete)
+* [tryGet](errortools.md#tryget)
+* [tryOp](errortools.md#tryop)
+* [tryPost](errortools.md#trypost)
+* [tryPut](errortools.md#tryput)
 
 ## Constructors
 
 ###  constructor
 
-\+ **new ErrorTools**(`errClass`: object): *[ErrorTools](_http2client_.errortools.md)*
+\+ **new ErrorTools**(`errClass`: object): *[ErrorTools](errortools.md)*
 
 Defined in src/http2client.ts:401
 
@@ -45,7 +45,7 @@ Name | Type | Description |
 ------ | ------ | ------ |
 `errClass` | object | error class constructor that should be used if something needs to be thrown  |
 
-**Returns:** *[ErrorTools](_http2client_.errortools.md)*
+**Returns:** *[ErrorTools](errortools.md)*
 
 ## Methods
 
@@ -146,7 +146,7 @@ ___
 
 ###  tryDelete
 
-▸ **tryDelete**(`errorType`: keyof typeof ErrorTypes, `client`: [Http2Fetch](_http2client_.http2fetch.md), `path`: string, `cred?`: [CredentialTuple](../modules/_http2client_.md#credentialtuple)): *Promise‹object›*
+▸ **tryDelete**(`errorType`: keyof typeof ErrorTypes, `client`: [Http2Fetch](http2fetch.md), `path`: string, `cred?`: [CredentialTuple](../README.md#credentialtuple)): *Promise‹object›*
 
 Defined in src/http2client.ts:502
 
@@ -157,9 +157,9 @@ Attempt a HTTP2 DELETE operation
 Name | Type | Description |
 ------ | ------ | ------ |
 `errorType` | keyof typeof ErrorTypes | The type of the error that will be thrown in case of failure |
-`client` | [Http2Fetch](_http2client_.http2fetch.md) | `Http2Fetch` object to leverage for this operation |
+`client` | [Http2Fetch](http2fetch.md) | `Http2Fetch` object to leverage for this operation |
 `path` | string | relative path of the endpoint to consume |
-`cred?` | [CredentialTuple](../modules/_http2client_.md#credentialtuple) | optional `Credentials` object for this call to override default one |
+`cred?` | [CredentialTuple](../README.md#credentialtuple) | optional `Credentials` object for this call to override default one |
 
 **Returns:** *Promise‹object›*
 
@@ -169,7 +169,7 @@ ___
 
 ###  tryGet
 
-▸ **tryGet**(`errorType`: keyof typeof ErrorTypes, `client`: [Http2Fetch](_http2client_.http2fetch.md), `path`: string, `cred?`: [CredentialTuple](../modules/_http2client_.md#credentialtuple)): *Promise‹object›*
+▸ **tryGet**(`errorType`: keyof typeof ErrorTypes, `client`: [Http2Fetch](http2fetch.md), `path`: string, `cred?`: [CredentialTuple](../README.md#credentialtuple)): *Promise‹object›*
 
 Defined in src/http2client.ts:486
 
@@ -180,9 +180,9 @@ Attempt a HTTP2 GET operation
 Name | Type | Description |
 ------ | ------ | ------ |
 `errorType` | keyof typeof ErrorTypes | The type of the error that will be thrown in case of failure |
-`client` | [Http2Fetch](_http2client_.http2fetch.md) | `Http2Fetch` object to leverage for this operation |
+`client` | [Http2Fetch](http2fetch.md) | `Http2Fetch` object to leverage for this operation |
 `path` | string | relative path of the endpoint to consume |
-`cred?` | [CredentialTuple](../modules/_http2client_.md#credentialtuple) | optional `Credentials` object for this call to override default one |
+`cred?` | [CredentialTuple](../README.md#credentialtuple) | optional `Credentials` object for this call to override default one |
 
 **Returns:** *Promise‹object›*
 
@@ -235,7 +235,7 @@ ___
 
 ###  tryPost
 
-▸ **tryPost**(`errorType`: keyof typeof ErrorTypes, `client`: [Http2Fetch](_http2client_.http2fetch.md), `path`: string, `body`: any, `cred?`: [CredentialTuple](../modules/_http2client_.md#credentialtuple)): *Promise‹object›*
+▸ **tryPost**(`errorType`: keyof typeof ErrorTypes, `client`: [Http2Fetch](http2fetch.md), `path`: string, `body`: any, `cred?`: [CredentialTuple](../README.md#credentialtuple)): *Promise‹object›*
 
 Defined in src/http2client.ts:453
 
@@ -246,10 +246,10 @@ Attempt a HTTP2 POST operation
 Name | Type | Description |
 ------ | ------ | ------ |
 `errorType` | keyof typeof ErrorTypes | The type of the error that will be thrown in case of failure |
-`client` | [Http2Fetch](_http2client_.http2fetch.md) | `Http2Fetch` object to leverage for this operation |
+`client` | [Http2Fetch](http2fetch.md) | `Http2Fetch` object to leverage for this operation |
 `path` | string | relative path of the endpoint to consume |
 `body` | any | body content to be send |
-`cred?` | [CredentialTuple](../modules/_http2client_.md#credentialtuple) | optional `Credentials` object for this call to override default one |
+`cred?` | [CredentialTuple](../README.md#credentialtuple) | optional `Credentials` object for this call to override default one |
 
 **Returns:** *Promise‹object›*
 
@@ -259,7 +259,7 @@ ___
 
 ###  tryPut
 
-▸ **tryPut**(`errorType`: keyof typeof ErrorTypes, `client`: [Http2Fetch](_http2client_.http2fetch.md), `path`: string, `body`: any, `cred?`: [CredentialTuple](../modules/_http2client_.md#credentialtuple)): *Promise‹object›*
+▸ **tryPut**(`errorType`: keyof typeof ErrorTypes, `client`: [Http2Fetch](http2fetch.md), `path`: string, `body`: any, `cred?`: [CredentialTuple](../README.md#credentialtuple)): *Promise‹object›*
 
 Defined in src/http2client.ts:470
 
@@ -270,10 +270,10 @@ Attempt a HTTP2 PUT operation
 Name | Type | Description |
 ------ | ------ | ------ |
 `errorType` | keyof typeof ErrorTypes | The type of the error that will be thrown in case of failure |
-`client` | [Http2Fetch](_http2client_.http2fetch.md) | `Http2Fetch` object to leverage for this operation |
+`client` | [Http2Fetch](http2fetch.md) | `Http2Fetch` object to leverage for this operation |
 `path` | string | relative path of the endpoint to consume |
 `body` | any | body content to be send |
-`cred?` | [CredentialTuple](../modules/_http2client_.md#credentialtuple) | optional `Credentials` object for this call to override default one |
+`cred?` | [CredentialTuple](../README.md#credentialtuple) | optional `Credentials` object for this call to override default one |
 
 **Returns:** *Promise‹object›*
 

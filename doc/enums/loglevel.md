@@ -1,4 +1,4 @@
-[pan-cortex-data-lake](../README.md) › ["commonlogger"](../modules/_commonlogger_.md) › [logLevel](_commonlogger_.loglevel.md)
+[pan-cortex-data-lake](../README.md) › [logLevel](loglevel.md)
 
 # Enumeration: logLevel
 
@@ -8,11 +8,11 @@ Log levels supported
 
 ### Enumeration members
 
-* [DEBUG](_commonlogger_.loglevel.md#debug)
-* [ERROR](_commonlogger_.loglevel.md#error)
-* [INFO](_commonlogger_.loglevel.md#info)
-* [NONE](_commonlogger_.loglevel.md#none)
-* [WARNING](_commonlogger_.loglevel.md#warning)
+* [DEBUG](loglevel.md#debug)
+* [ERROR](loglevel.md#error)
+* [INFO](loglevel.md#info)
+* [NONE](loglevel.md#none)
+* [WARNING](loglevel.md#warning)
 
 ## Enumeration members
 
