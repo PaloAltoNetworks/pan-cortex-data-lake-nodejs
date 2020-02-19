@@ -17,7 +17,7 @@
 
 • **CLOSED**:
 
-Defined in src/query/query_service_client.ts:132
+*Defined in [src/query/query_service_client.ts:132](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/dcdea9e/src/query/query_service_client.ts#L132)*
 
 ___
 
@@ -25,7 +25,7 @@ ___
 
 • **CLOSING**:
 
-Defined in src/query/query_service_client.ts:131
+*Defined in [src/query/query_service_client.ts:131](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/dcdea9e/src/query/query_service_client.ts#L131)*
 
 ___
 
@@ -33,7 +33,7 @@ ___
 
 • **LOADING**:
 
-Defined in src/query/query_service_client.ts:130
+*Defined in [src/query/query_service_client.ts:130](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/dcdea9e/src/query/query_service_client.ts#L130)*
 
 ___
 
@@ -41,4 +41,4 @@ ___
 
 • **READY**:
 
-Defined in src/query/query_service_client.ts:129
+*Defined in [src/query/query_service_client.ts:129](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/dcdea9e/src/query/query_service_client.ts#L129)*

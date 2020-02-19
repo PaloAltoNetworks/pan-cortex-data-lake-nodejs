@@ -32,7 +32,7 @@ Provides an abstraction of the Cortex Data Lake Query Service API
 
 \+ **new QueryService**(`client`: [Http2Fetch](http2fetch.md), `cred?`: [CredentialTuple](../README.md#credentialtuple)): *[QueryService](queryservice.md)*
 
-Defined in src/query/query_service.ts:44
+*Defined in [src/query/query_service.ts:44](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/dcdea9e/src/query/query_service.ts#L44)*
 
 Use the constructor if you want to create a new `QueryService` object
 sharing an existing `HttpdFetch` object with other objects.
@@ -52,7 +52,7 @@ Name | Type | Description |
 
 ▸ **close**(`entryPoint?`: undefined | string): *Promise‹void›*
 
-Defined in src/query/query_service.ts:182
+*Defined in [src/query/query_service.ts:182](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/dcdea9e/src/query/query_service.ts#L182)*
 
 Closes the underlying `Http2Fetch` client session
 
@@ -70,7 +70,7 @@ ___
 
 ▸ **createJob**(`body`: [Query](../README.md#query), `cred?`: [CredentialTuple](../README.md#credentialtuple)): *Promise‹[QueryJobResp](../README.md#queryjobresp)›*
 
-Defined in src/query/query_service.ts:81
+*Defined in [src/query/query_service.ts:81](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/dcdea9e/src/query/query_service.ts#L81)*
 
 Cortex Data Lake contains log data that is written by various products and apps, such as Palo Alto Networks
 next-generation firewalls. Use this API to create query jobs that return log data matching your query criteria.
@@ -94,7 +94,7 @@ ___
 
 ▸ **deleteJob**(`jobId`: string, `cred?`: [CredentialTuple](../README.md#credentialtuple)): *Promise‹void›*
 
-Defined in src/query/query_service.ts:168
+*Defined in [src/query/query_service.ts:168](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/dcdea9e/src/query/query_service.ts#L168)*
 
 Asks the query service to cancel the identified query job. A successful response to this call does
 not guarantee that the job has been, or will be, canceled.
@@ -114,7 +114,7 @@ ___
 
 ▸ **getJobResults**(`jobId`: String, `opts?`: [GetJobResultsOpts](../README.md#getjobresultsopts), `cred?`: [CredentialTuple](../README.md#credentialtuple)): *Promise‹[QueryResultResp](../README.md#queryresultresp)›*
 
-Defined in src/query/query_service.ts:104
+*Defined in [src/query/query_service.ts:104](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/dcdea9e/src/query/query_service.ts#L104)*
 
 Retrieve a page of query results for the query job identified by {jobId}.
 
@@ -136,7 +136,7 @@ ___
 
 ▸ **getJobStatus**(`jobId`: string, `cred?`: [CredentialTuple](../README.md#credentialtuple)): *Promise‹[QueryJobDetail](../README.md#queryjobdetail)›*
 
-Defined in src/query/query_service.ts:148
+*Defined in [src/query/query_service.ts:148](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/dcdea9e/src/query/query_service.ts#L148)*
 
 Returns detailed information about the query job. This information includes the job’s current state,
 it’s submission and start times, the estimated amount of work that has been completed, and the original
@@ -159,7 +159,7 @@ ___
 
 ▸ **getJobsList**(`opts`: [GetJobsListOpts](../README.md#getjobslistopts), `cred?`: [CredentialTuple](../README.md#credentialtuple)): *Promise‹[QueryJobDetail](../README.md#queryjobdetail)[]›*
 
-Defined in src/query/query_service.ts:125
+*Defined in [src/query/query_service.ts:125](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/dcdea9e/src/query/query_service.ts#L125)*
 
 Retrieves a list of query jobs that match specified criteria. The retrieved list of jobs is in chronological order,
 from most recent to oldest.
@@ -181,7 +181,7 @@ ___
 
 ▸ **factory**(`opts`: [Http2FetchOpts](../interfaces/http2fetchopts.md)): *[QueryService](queryservice.md)*
 
-Defined in src/query/query_service.ts:64
+*Defined in [src/query/query_service.ts:64](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/dcdea9e/src/query/query_service.ts#L64)*
 
 Factory method that builds an `Http2Fetch` object and then instantiates a
 new `QueryService` object on top of it.

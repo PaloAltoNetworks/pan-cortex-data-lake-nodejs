@@ -31,7 +31,7 @@ Error subclass that allows the developer get insights on reasons for a HTTP2 err
 
 \+ **new Http2FetchError**(`message`: string, `status`: number, `data`: any): *[Http2FetchError](http2fetcherror.md)*
 
-Defined in src/http2client.ts:48
+*Defined in [src/http2client.ts:48](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/dcdea9e/src/http2client.ts#L48)*
 
 **Parameters:**
 
@@ -49,7 +49,7 @@ Name | Type |
 
 • **data**: *any*
 
-Defined in src/http2client.ts:48
+*Defined in [src/http2client.ts:48](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/dcdea9e/src/http2client.ts#L48)*
 
 Body of the HTTP2 response that triggered the errror
 
@@ -89,7 +89,7 @@ ___
 
 • **status**: *number*
 
-Defined in src/http2client.ts:44
+*Defined in [src/http2client.ts:44](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/dcdea9e/src/http2client.ts#L44)*
 
 Value of the HTTP2 status header that triggered the error
 

@@ -8,7 +8,7 @@ Incorporate the `pan-cortex-data-lake` NodeJS package in your project with the f
 bash command:
 
 ```bash
-npm i git://spring.paloaltonetworks.com/xhoms/pan-cortex-data-lake-nodejs
+npm i git://github.com/xhoms/pan-cortex-data-lake-nodejs
 ```
 
 You can now import the package into your NodeJS code.
@@ -57,7 +57,7 @@ async function init() {
 ```
 
 Take a look to the complementary repo
-[pan-cortex-hub-nodejs](https://spring.paloaltonetworks.com/xhoms/pan-cortex-hub-nodejs)
+[pan-cortex-hub-nodejs](https://github.com/xhoms/pan-cortex-data-lake-nodejs)
 with a collection of compatible `credential` objects as well as full secret
 repositories (`CortexCredentialProvider`) and building blocks for a SaaS
 component to interface with Cortex hub.
