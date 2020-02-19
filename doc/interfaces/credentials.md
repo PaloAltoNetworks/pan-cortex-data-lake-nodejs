@@ -21,7 +21,7 @@ The basic methods expected from an object that provides credentials
 
 ▸ **getEntryPoint**(): *string*
 
-Defined in src/index.ts:44
+*Defined in [src/index.ts:44](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/dcdea9e/src/index.ts#L44)*
 
 Cortex Data Lake API fqdn (region) this token in valid for
 
@@ -33,7 +33,7 @@ ___
 
 ▸ **getToken**(`force?`: undefined | false | true): *Promise‹string | undefined›*
 
-Defined in src/index.ts:40
+*Defined in [src/index.ts:40](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/dcdea9e/src/index.ts#L40)*
 
 Method to retrieve the token data
 

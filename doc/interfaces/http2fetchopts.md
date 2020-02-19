@@ -178,7 +178,7 @@ ___
 
 • **cortexBaseFqdn**? : *undefined | string*
 
-Defined in src/http2client.ts:65
+*Defined in [src/http2client.ts:65](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/dcdea9e/src/http2client.ts#L65)*
 
 Cortex API default FQDN to use in operations that do not provide an
 explicit `Credentials` object
@@ -189,7 +189,7 @@ ___
 
 • **cortexDefCredentials**? : *[Credentials](credentials.md)*
 
-Defined in src/http2client.ts:69
+*Defined in [src/http2client.ts:69](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/dcdea9e/src/http2client.ts#L69)*
 
 If provided, then all operations will use this `Credential`'s JWT token
 

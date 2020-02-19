@@ -32,7 +32,7 @@
 
 \+ **new QueryIterator**(`sqlCommand`: string, `qsc`: [QueryServiceClient](queryserviceclient.md), `cred?`: [CredentialTuple](../README.md#credentialtuple)): *[QueryIterator](queryiterator.md)*
 
-Defined in src/query/query_service_client.ts:90
+*Defined in [src/query/query_service_client.ts:90](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/dcdea9e/src/query/query_service_client.ts#L90)*
 
 **Parameters:**
 
@@ -50,7 +50,7 @@ Name | Type |
 
 • **cred**? : *[CredentialTuple](../README.md#credentialtuple)*
 
-Defined in src/query/query_service_client.ts:90
+*Defined in [src/query/query_service_client.ts:90](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/dcdea9e/src/query/query_service_client.ts#L90)*
 
 ## Methods
 
@@ -58,7 +58,7 @@ Defined in src/query/query_service_client.ts:90
 
 ▸ **[Symbol.asyncIterator]**(): *AsyncIterableIterator‹any›*
 
-Defined in src/query/query_service_client.ts:97
+*Defined in [src/query/query_service_client.ts:97](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/dcdea9e/src/query/query_service_client.ts#L97)*
 
 **Returns:** *AsyncIterableIterator‹any›*
 
@@ -68,7 +68,7 @@ ___
 
 ▸ **next**(): *Promise‹IteratorResult‹any››*
 
-Defined in src/query/query_service_client.ts:101
+*Defined in [src/query/query_service_client.ts:101](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/dcdea9e/src/query/query_service_client.ts#L101)*
 
 **Returns:** *Promise‹IteratorResult‹any››*
 
@@ -78,6 +78,6 @@ ___
 
 ▸ **return**(): *Promise‹IteratorResult‹any››*
 
-Defined in src/query/query_service_client.ts:121
+*Defined in [src/query/query_service_client.ts:121](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/dcdea9e/src/query/query_service_client.ts#L121)*
 
 **Returns:** *Promise‹IteratorResult‹any››*
