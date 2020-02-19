@@ -3,7 +3,7 @@
  * Stream.Readable interface to execute a SQL query and navigate its results.
  */
 
-import * as cortex from 'pan-cortex-data-lake'
+import * as cortex from '@paloaltonetworks/pan-cortex-data-lake'
 
 const SQLCMD = 'SELECT * FROM `<instance_id>.firewall.traffic` LIMIT 100'
 const ACCESS_TOKEN = 'eyJh...BE9A'

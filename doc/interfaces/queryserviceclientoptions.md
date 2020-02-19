@@ -1,4 +1,4 @@
-[pan-cortex-data-lake](../README.md) › [QueryServiceClientOptions](queryserviceclientoptions.md)
+[@paloaltonetworks/pan-cortex-data-lake](../README.md) › [QueryServiceClientOptions](queryserviceclientoptions.md)
 
 # Interface: QueryServiceClientOptions
 
@@ -24,7 +24,7 @@ Configuration options for the QueryServiceClient object
 
 • **autoClose**? : *undefined | false | true*
 
-*Defined in [src/query/query_service_client.ts:201](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/dcdea9e/src/query/query_service_client.ts#L201)*
+Defined in src/query/query_service_client.ts:201
 
 By default the iterator or stream will close the underlying HTTP2 session
 at the end. Switch this flag to false to revert this behaviour. You might
@@ -36,7 +36,7 @@ ___
 
 • **cred**? : *[CredentialTuple](../README.md#credentialtuple)*
 
-*Defined in [src/query/query_service_client.ts:205](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/dcdea9e/src/query/query_service_client.ts#L205)*
+Defined in src/query/query_service_client.ts:205
 
 Default `Credentials` object to use by this object's methods
 
@@ -46,7 +46,7 @@ ___
 
 • **delay**? : *undefined | number*
 
-*Defined in [src/query/query_service_client.ts:191](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/dcdea9e/src/query/query_service_client.ts#L191)*
+Defined in src/query/query_service_client.ts:191
 
 Milliseconds to wait before attempting the same call again (default: 200)
 
@@ -56,7 +56,7 @@ ___
 
 • **pageSize**? : *undefined | number*
 
-*Defined in [src/query/query_service_client.ts:187](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/dcdea9e/src/query/query_service_client.ts#L187)*
+Defined in src/query/query_service_client.ts:187
 
 Max amount of response items in each page (default: 400)
 
@@ -66,6 +66,6 @@ ___
 
 • **retries**? : *undefined | number*
 
-*Defined in [src/query/query_service_client.ts:195](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/dcdea9e/src/query/query_service_client.ts#L195)*
+Defined in src/query/query_service_client.ts:195
 
 Amount of retries of the same call (default: 10)

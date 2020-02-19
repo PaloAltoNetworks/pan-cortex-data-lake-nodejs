@@ -1,4 +1,4 @@
-[pan-cortex-data-lake](../README.md) › [__global](__global.md)
+[@paloaltonetworks/pan-cortex-data-lake](../README.md) › [__global](__global.md)
 
 # Module: __global
 
@@ -20,4 +20,4 @@ With this declaration we override the tsc compilation errors of the avsc package
 
 Ƭ **Blob**: *any*
 
-*Defined in [src/index.ts:21](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/dcdea9e/src/index.ts#L21)*
+Defined in src/index.ts:21

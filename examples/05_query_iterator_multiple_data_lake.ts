@@ -7,7 +7,7 @@
  * credentials in the iterators method
  */
 
-import * as cortex from 'pan-cortex-data-lake'
+import * as cortex from '@paloaltonetworks/pan-cortex-data-lake'
 
 const SQLCMD1 = 'SELECT * FROM `<instance_id1>.firewall.traffic` LIMIT 100'
 const SQLCMD2 = 'SELECT * FROM `<instance_id2>.firewall.traffic` LIMIT 100'
