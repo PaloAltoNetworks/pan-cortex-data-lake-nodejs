@@ -56,12 +56,7 @@ async function init() {
 }
 ```
 
-Take a look to the complementary repo
-<<<<<<< HEAD
-[pan-cortex-hub-nodejs](https://github.com/xhoms/pan-cortex-data-lake-nodejs)
-=======
-[pan-cortex-hub-nodejs](https://github.com/xhoms/pan-cortex-hub-nodejs)
->>>>>>> develop
+Take a look to the complementary repo [pan-cortex-hub-nodejs](https://github.com/xhoms/pan-cortex-hub-nodejs)
 with a collection of compatible `credential` objects as well as full secret
 repositories (`CortexCredentialProvider`) and building blocks for a SaaS
 component to interface with Cortex hub.
