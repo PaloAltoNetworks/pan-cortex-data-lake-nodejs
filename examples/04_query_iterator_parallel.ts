@@ -3,7 +3,7 @@
  * Iterator interface to execute multiple SQL queries in parallel
  */
 
-import * as cortex from 'pan-cortex-data-lake'
+import * as cortex from '@paloaltonetworks/pan-cortex-data-lake'
 
 const SQLCMD1 = 'SELECT * FROM `<instance_id>.firewall.traffic` LIMIT 100'
 const SQLCMD2 = 'SELECT * FROM `<instance_id>.firewall.threat` LIMIT 100'

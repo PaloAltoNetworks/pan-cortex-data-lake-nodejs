@@ -1,4 +1,4 @@
-[pan-cortex-data-lake](../README.md) › [Http2Fetch](http2fetch.md)
+[@paloaltonetworks/pan-cortex-data-lake](../README.md) › [Http2Fetch](http2fetch.md)
 
 # Class: Http2Fetch
 
@@ -29,7 +29,7 @@ Class that implements a HTTP2 fetch object
 
 \+ **new Http2Fetch**(`opts?`: [Http2FetchOpts](../interfaces/http2fetchopts.md)): *[Http2Fetch](http2fetch.md)*
 
-*Defined in [src/http2client.ts:103](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/dcdea9e/src/http2client.ts#L103)*
+Defined in src/http2client.ts:103
 
 Instantiates a new `Http2Fetch` object from provided configuration
 options. You must provide, at least, `cortexBaseFqdn` or `cortexDefCredentials`
@@ -50,7 +50,7 @@ an instantiated `Http2Fetch` object
 
 ▸ **close**(`entryPoint?`: undefined | string): *Promise‹void›*
 
-*Defined in [src/http2client.ts:240](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/dcdea9e/src/http2client.ts#L240)*
+Defined in src/http2client.ts:240
 
 Attemps to close the underlying session (if any)
 
@@ -68,7 +68,7 @@ ___
 
 ▸ **delete**(`path`: string, `opts?`: http2.ClientSessionRequestOptions, `cred?`: [CredentialTuple](../README.md#credentialtuple)): *Promise‹object›*
 
-*Defined in [src/http2client.ts:367](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/dcdea9e/src/http2client.ts#L367)*
+Defined in src/http2client.ts:367
 
 Execute a HTTP2 DELETE operation
 
@@ -90,7 +90,7 @@ ___
 
 ▸ **get**(`path`: string, `opts?`: http2.ClientSessionRequestOptions, `cred?`: [CredentialTuple](../README.md#credentialtuple)): *Promise‹object›*
 
-*Defined in [src/http2client.ts:356](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/dcdea9e/src/http2client.ts#L356)*
+Defined in src/http2client.ts:356
 
 Execute a HTTP2 GET operation
 
@@ -112,7 +112,7 @@ ___
 
 ▸ **init**(`c?`: [CredentialTuple](../README.md#credentialtuple)): *Promise‹void›*
 
-*Defined in [src/http2client.ts:121](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/dcdea9e/src/http2client.ts#L121)*
+Defined in src/http2client.ts:121
 
 **Parameters:**
 
@@ -128,7 +128,7 @@ ___
 
 ▸ **post**(`path`: string, `body`: any, `contentType`: string, `opts?`: http2.ClientSessionRequestOptions, `cred?`: [CredentialTuple](../README.md#credentialtuple)): *Promise‹object›*
 
-*Defined in [src/http2client.ts:379](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/dcdea9e/src/http2client.ts#L379)*
+Defined in src/http2client.ts:379
 
 Execute a HTTP2 POST operation
 
@@ -152,7 +152,7 @@ ___
 
 ▸ **put**(`path`: string, `body`: any, `contentType`: string, `opts?`: http2.ClientSessionRequestOptions, `cred?`: [CredentialTuple](../README.md#credentialtuple)): *Promise‹object›*
 
-*Defined in [src/http2client.ts:391](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/dcdea9e/src/http2client.ts#L391)*
+Defined in src/http2client.ts:391
 
 Execute a HTTP2 PUT operation
 

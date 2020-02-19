@@ -1,4 +1,4 @@
-[pan-cortex-data-lake](../README.md) › [QueryWorker](queryworker.md)
+[@paloaltonetworks/pan-cortex-data-lake](../README.md) › [QueryWorker](queryworker.md)
 
 # Class: QueryWorker
 
@@ -32,7 +32,7 @@
 
 \+ **new QueryWorker**(`sqlCommand`: string, `qsc`: [QueryServiceClient](queryserviceclient.md), `cred?`: [CredentialTuple](../README.md#credentialtuple)): *[QueryWorker](queryworker.md)*
 
-*Defined in [src/query/query_service_client.ts:43](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/dcdea9e/src/query/query_service_client.ts#L43)*
+Defined in src/query/query_service_client.ts:43
 
 **Parameters:**
 
@@ -50,7 +50,7 @@ Name | Type |
 
 • **cred**? : *[CredentialTuple](../README.md#credentialtuple)*
 
-*Defined in [src/query/query_service_client.ts:41](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/dcdea9e/src/query/query_service_client.ts#L41)*
+Defined in src/query/query_service_client.ts:41
 
 ___
 
@@ -58,7 +58,7 @@ ___
 
 • **deleteJob**: *function*
 
-*Defined in [src/query/query_service_client.ts:38](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/dcdea9e/src/query/query_service_client.ts#L38)*
+Defined in src/query/query_service_client.ts:38
 
 #### Type declaration:
 
@@ -77,7 +77,7 @@ ___
 
 • **jobId**: *null | string* = null as string | null
 
-*Defined in [src/query/query_service_client.ts:39](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/dcdea9e/src/query/query_service_client.ts#L39)*
+Defined in src/query/query_service_client.ts:39
 
 ___
 
@@ -85,7 +85,7 @@ ___
 
 • **pageCursor**: *null | string* = null as string | null
 
-*Defined in [src/query/query_service_client.ts:42](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/dcdea9e/src/query/query_service_client.ts#L42)*
+Defined in src/query/query_service_client.ts:42
 
 ___
 
@@ -93,7 +93,7 @@ ___
 
 • **qsc**: *[QueryServiceClient](queryserviceclient.md)*
 
-*Defined in [src/query/query_service_client.ts:40](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/dcdea9e/src/query/query_service_client.ts#L40)*
+Defined in src/query/query_service_client.ts:40
 
 ___
 
@@ -101,7 +101,7 @@ ___
 
 • **results**: *null | any[]* = null as any[] | null
 
-*Defined in [src/query/query_service_client.ts:43](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/dcdea9e/src/query/query_service_client.ts#L43)*
+Defined in src/query/query_service_client.ts:43
 
 ## Methods
 
@@ -109,7 +109,7 @@ ___
 
 ▸ **lazyInit**(): *Promise‹void›*
 
-*Defined in [src/query/query_service_client.ts:65](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/dcdea9e/src/query/query_service_client.ts#L65)*
+Defined in src/query/query_service_client.ts:65
 
 **Returns:** *Promise‹void›*
 
@@ -119,6 +119,6 @@ ___
 
 ▸ **loadPage**(): *Promise‹void›*
 
-*Defined in [src/query/query_service_client.ts:55](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/dcdea9e/src/query/query_service_client.ts#L55)*
+Defined in src/query/query_service_client.ts:55
 
 **Returns:** *Promise‹void›*

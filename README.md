@@ -8,13 +8,19 @@ Incorporate the `pan-cortex-data-lake` NodeJS package in your project with the f
 bash command:
 
 ```bash
+npm i @paloaltonetworks/pan-cortex-data-lake
+```
+
+You can also install the package from its GITHUB repo
+
+```bash
 npm i git://github.com/xhoms/pan-cortex-data-lake-nodejs
 ```
 
 You can now import the package into your NodeJS code.
 
 ```javascript
-const cortex = require('pan-cortex-data-lake');
+const cortex = require('@paloaltonetworks/pan-cortex-data-lake');
 ```
 
 Source code is written in TypeScript and the build process productes type
@@ -22,7 +28,7 @@ definition files which means you can leverage strongly type and code
 auto-complete features.
 
 ```ts
-import * as cortex from 'pan-cortex-data-lake'
+import * as cortex from '@paloaltonetworks/pan-cortex-data-lake'
 ```
 
 # Authorization
