@@ -14,7 +14,7 @@ npm i @paloaltonetworks/pan-cortex-data-lake
 You can also install the package from its GITHUB repo
 
 ```bash
-npm i git://github.com/xhoms/pan-cortex-data-lake-nodejs
+npm i git://github.com/PaloAltoNetworks/pan-cortex-data-lake-nodejs
 ```
 
 You can now import the package into your NodeJS code.

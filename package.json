@@ -2,10 +2,10 @@
   "name": "@paloaltonetworks/pan-cortex-data-lake",
   "version": "0.1.0",
   "description": "Palo Alto Networks Cortex Data Lake client library",
-  "homepage": "https://github.com/xhoms/pan-cortex-data-lake-nodejs#readme",
+  "homepage": "https://github.com/PaloAltoNetworks/pan-cortex-data-lake-nodejs#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/xhoms/pan-cortex-data-lake-nodejs.git"
+    "url": "https://github.com/PaloAltoNetworks/pan-cortex-data-lake-nodejs.git"
   },
   "main": "lib/index.js",
   "scripts": {
