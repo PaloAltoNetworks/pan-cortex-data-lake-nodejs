@@ -35,7 +35,7 @@ describes the class type that would be thrown (if needed)
 
 \+ **new ErrorTools**(`errClass`: object): *[ErrorTools](errortools.md)*
 
-Defined in src/http2client.ts:401
+*Defined in [src/http2client.ts:412](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/http2client.ts#L412)*
 
 Builds an `ErrorTools` object
 
@@ -53,7 +53,7 @@ Name | Type | Description |
 
 ▸ **retrier**<**T**, **O**>(`errorType`: keyof typeof ErrorTypes, `n`: number, `delay`: number, `op`: function, ...`params`: T[]): *Promise‹O›*
 
-Defined in src/http2client.ts:521
+*Defined in [src/http2client.ts:532](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/http2client.ts#L532)*
 
 Generic retrier method that attemps to execute a function that returns a
 response of type `<O>` provided an arrays of arguments of type `<T>`
@@ -105,7 +105,7 @@ ___
 
 ▸ **tryAsyncOp**<**T**, **U**>(`errorType`: keyof typeof ErrorTypes, `op`: function, ...`params`: U): *Promise‹T›*
 
-Defined in src/http2client.ts:436
+*Defined in [src/http2client.ts:447](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/http2client.ts#L447)*
 
 Attempt an async operation that returns an object of type `<T>` and that
 consumes arguments of type `...<U>[]`
@@ -148,7 +148,7 @@ ___
 
 ▸ **tryDelete**(`errorType`: keyof typeof ErrorTypes, `client`: [Http2Fetch](http2fetch.md), `path`: string, `cred?`: [CredentialTuple](../README.md#credentialtuple)): *Promise‹object›*
 
-Defined in src/http2client.ts:502
+*Defined in [src/http2client.ts:513](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/http2client.ts#L513)*
 
 Attempt a HTTP2 DELETE operation
 
@@ -171,7 +171,7 @@ ___
 
 ▸ **tryGet**(`errorType`: keyof typeof ErrorTypes, `client`: [Http2Fetch](http2fetch.md), `path`: string, `cred?`: [CredentialTuple](../README.md#credentialtuple)): *Promise‹object›*
 
-Defined in src/http2client.ts:486
+*Defined in [src/http2client.ts:497](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/http2client.ts#L497)*
 
 Attempt a HTTP2 GET operation
 
@@ -194,7 +194,7 @@ ___
 
 ▸ **tryOp**<**T**, **U**>(`errorType`: keyof typeof ErrorTypes, `op`: function, ...`params`: U): *T*
 
-Defined in src/http2client.ts:420
+*Defined in [src/http2client.ts:431](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/http2client.ts#L431)*
 
 Attempt an operation that returns an object of type `<T>` and that
 consumes arguments of type `...<U>[]`
@@ -237,7 +237,7 @@ ___
 
 ▸ **tryPost**(`errorType`: keyof typeof ErrorTypes, `client`: [Http2Fetch](http2fetch.md), `path`: string, `body`: any, `cred?`: [CredentialTuple](../README.md#credentialtuple)): *Promise‹object›*
 
-Defined in src/http2client.ts:453
+*Defined in [src/http2client.ts:464](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/http2client.ts#L464)*
 
 Attempt a HTTP2 POST operation
 
@@ -261,7 +261,7 @@ ___
 
 ▸ **tryPut**(`errorType`: keyof typeof ErrorTypes, `client`: [Http2Fetch](http2fetch.md), `path`: string, `body`: any, `cred?`: [CredentialTuple](../README.md#credentialtuple)): *Promise‹object›*
 
-Defined in src/http2client.ts:470
+*Defined in [src/http2client.ts:481](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/http2client.ts#L481)*
 
 Attempt a HTTP2 PUT operation
 

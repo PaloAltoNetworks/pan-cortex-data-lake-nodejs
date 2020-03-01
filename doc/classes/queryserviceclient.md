@@ -44,7 +44,7 @@ Data Lake queries.
 
 *Overrides [QueryService](queryservice.md).[constructor](queryservice.md#constructor)*
 
-Defined in src/query/query_service_client.ts:216
+*Defined in [src/query/query_service_client.ts:216](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_client.ts#L216)*
 
 Use the constructor if you want to create a new `QueryService` object
 sharing an existing `HttpdFetch` object with other objects.
@@ -64,7 +64,7 @@ Name | Type | Description |
 
 • **autoClose**: *boolean*
 
-Defined in src/query/query_service_client.ts:216
+*Defined in [src/query/query_service_client.ts:216](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_client.ts#L216)*
 
 ___
 
@@ -72,7 +72,7 @@ ___
 
 • **delay**: *number*
 
-Defined in src/query/query_service_client.ts:214
+*Defined in [src/query/query_service_client.ts:214](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_client.ts#L214)*
 
 ___
 
@@ -80,7 +80,7 @@ ___
 
 • **pageSize**: *number*
 
-Defined in src/query/query_service_client.ts:213
+*Defined in [src/query/query_service_client.ts:213](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_client.ts#L213)*
 
 ___
 
@@ -88,7 +88,7 @@ ___
 
 • **retries**: *number*
 
-Defined in src/query/query_service_client.ts:215
+*Defined in [src/query/query_service_client.ts:215](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_client.ts#L215)*
 
 ## Methods
 
@@ -98,7 +98,7 @@ Defined in src/query/query_service_client.ts:215
 
 *Inherited from [QueryService](queryservice.md).[close](queryservice.md#close)*
 
-Defined in src/query/query_service.ts:182
+*Defined in [src/query/query_service.ts:182](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service.ts#L182)*
 
 Closes the underlying `Http2Fetch` client session
 
@@ -118,7 +118,7 @@ ___
 
 *Inherited from [QueryService](queryservice.md).[createJob](queryservice.md#createjob)*
 
-Defined in src/query/query_service.ts:81
+*Defined in [src/query/query_service.ts:81](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service.ts#L81)*
 
 Cortex Data Lake contains log data that is written by various products and apps, such as Palo Alto Networks
 next-generation firewalls. Use this API to create query jobs that return log data matching your query criteria.
@@ -144,7 +144,7 @@ ___
 
 *Inherited from [QueryService](queryservice.md).[deleteJob](queryservice.md#deletejob)*
 
-Defined in src/query/query_service.ts:168
+*Defined in [src/query/query_service.ts:168](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service.ts#L168)*
 
 Asks the query service to cancel the identified query job. A successful response to this call does
 not guarantee that the job has been, or will be, canceled.
@@ -166,7 +166,7 @@ ___
 
 *Inherited from [QueryService](queryservice.md).[getJobResults](queryservice.md#getjobresults)*
 
-Defined in src/query/query_service.ts:104
+*Defined in [src/query/query_service.ts:104](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service.ts#L104)*
 
 Retrieve a page of query results for the query job identified by {jobId}.
 
@@ -190,7 +190,7 @@ ___
 
 *Inherited from [QueryService](queryservice.md).[getJobStatus](queryservice.md#getjobstatus)*
 
-Defined in src/query/query_service.ts:148
+*Defined in [src/query/query_service.ts:148](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service.ts#L148)*
 
 Returns detailed information about the query job. This information includes the job’s current state,
 it’s submission and start times, the estimated amount of work that has been completed, and the original
@@ -215,7 +215,7 @@ ___
 
 *Inherited from [QueryService](queryservice.md).[getJobsList](queryservice.md#getjobslist)*
 
-Defined in src/query/query_service.ts:125
+*Defined in [src/query/query_service.ts:125](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service.ts#L125)*
 
 Retrieves a list of query jobs that match specified criteria. The retrieved list of jobs is in chronological order,
 from most recent to oldest.
@@ -237,7 +237,7 @@ ___
 
 ▸ **iterator**(`sqlCommand`: string, `cred?`: [CredentialTuple](../README.md#credentialtuple)): *AsyncIterableIterator‹any[]›*
 
-Defined in src/query/query_service_client.ts:245
+*Defined in [src/query/query_service_client.ts:245](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_client.ts#L245)*
 
 Leverages ES2018 async iterator feature to return a way to iterate a
 Cortex Data Lake query response
@@ -259,7 +259,7 @@ ___
 
 ▸ **stream**(`sqlCommand`: string, `opts?`: ReadableOptions, `cred?`: [CredentialTuple](../README.md#credentialtuple)): *ReadableStream*
 
-Defined in src/query/query_service_client.ts:257
+*Defined in [src/query/query_service_client.ts:257](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_client.ts#L257)*
 
 Use this method to consume a Cortex Data Lake query reseult set using the
 NodeJS's Stream.Readable interface
@@ -284,7 +284,7 @@ ___
 
 *Overrides [QueryService](queryservice.md).[factory](queryservice.md#static-factory)*
 
-Defined in src/query/query_service_client.ts:233
+*Defined in [src/query/query_service_client.ts:233](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_client.ts#L233)*
 
 **Parameters:**
 

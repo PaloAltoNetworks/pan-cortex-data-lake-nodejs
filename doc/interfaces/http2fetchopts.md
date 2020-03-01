@@ -25,6 +25,7 @@ Options to configure a `Http2Fetch` object
 * [clientCertEngine](http2fetchopts.md#optional-clientcertengine)
 * [cortexBaseFqdn](http2fetchopts.md#optional-cortexbasefqdn)
 * [cortexDefCredentials](http2fetchopts.md#optional-cortexdefcredentials)
+* [cortexTimeout](http2fetchopts.md#optional-cortextimeout)
 * [createConnection](http2fetchopts.md#optional-createconnection)
 * [crl](http2fetchopts.md#optional-crl)
 * [dhparam](http2fetchopts.md#optional-dhparam)
@@ -178,7 +179,7 @@ ___
 
 • **cortexBaseFqdn**? : *undefined | string*
 
-Defined in src/http2client.ts:65
+*Defined in [src/http2client.ts:65](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/http2client.ts#L65)*
 
 Cortex API default FQDN to use in operations that do not provide an
 explicit `Credentials` object
@@ -189,9 +190,20 @@ ___
 
 • **cortexDefCredentials**? : *[Credentials](credentials.md)*
 
-Defined in src/http2client.ts:69
+*Defined in [src/http2client.ts:69](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/http2client.ts#L69)*
 
 If provided, then all operations will use this `Credential`'s JWT token
+
+___
+
+### `Optional` cortexTimeout
+
+• **cortexTimeout**? : *undefined | number*
+
+*Defined in [src/http2client.ts:74](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/http2client.ts#L74)*
+
+How many milliseconds to keep an inactive HTTP2 session to the Cortex API
+GW (default = 60000)
 
 ___
 

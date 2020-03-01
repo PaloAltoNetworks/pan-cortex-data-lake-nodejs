@@ -67,6 +67,11 @@ export interface Http2FetchOpts extends http2.ClientSessionOptions, http2.Secure
      * If provided, then all operations will use this `Credential`'s JWT token
      */
     cortexDefCredentials?: Credentials
+    /**
+     * How many milliseconds to keep an inactive HTTP2 session to the Cortex API
+     * GW (default = 60000)
+     */
+    cortexTimeout?: number
 }
 
 /**
@@ -101,6 +106,7 @@ export class Http2Fetch {
     private defaultEntrypoint: string
     private defaultCred?: CredentialTuple
     private opts?: Http2FetchOpts
+    private cortexTimeout: number
 
     /**
      * Instantiates a new `Http2Fetch` object from provided configuration
@@ -116,6 +122,7 @@ export class Http2Fetch {
         this.defaultCred = opts && opts.cortexDefCredentials && { cred: opts.cortexDefCredentials, entrypoint: opts.cortexDefCredentials.getEntryPoint(), dlid: "" }
         this.defaultEntrypoint = opts && opts.cortexBaseFqdn || APIEPMAP['americas']
         this.sessions = {}
+        this.cortexTimeout = opts && opts.cortexTimeout || 60000
     }
 
     async init(c?: CredentialTuple): Promise<void> {
@@ -150,8 +157,12 @@ export class Http2Fetch {
         const targetSession = this.sessions[targetFqdn] && this.sessions[targetFqdn].session
         if (targetSession == undefined || targetSession.closed || targetSession.destroyed) {
             return new Promise((res, rej) => {
-                const h3session = http2.connect(`https://${targetFqdn}:443`, this.opts)
-                h3session.on('connect', (sess) => {
+                const h2session = http2.connect(`https://${targetFqdn}:443`, this.opts)
+                h2session.on('connect', (sess) => {
+                    h2session.setTimeout(this.cortexTimeout, () => {
+                        commonLogger(logLevel.INFO, `HTTP2 session destroyed because of timeout`)
+                        h2session.destroy()
+                    })
                     commonLogger(logLevel.INFO, `Created new HTTP2 session to ${targetFqdn}`)
                     if (this.sessions[targetFqdn]) {
                         this.sessions[targetFqdn].session = sess
@@ -163,7 +174,7 @@ export class Http2Fetch {
                     }
                     res(sess)
                 })
-                h3session.on('error', rej)
+                h2session.on('error', rej)
             })
         }
         return Promise.resolve(targetSession)
@@ -354,7 +365,7 @@ export class Http2Fetch {
      * @returns the response data and status code value
      */
     get(path: string, opts?: http2.ClientSessionRequestOptions, cred?: CredentialTuple): Promise<{ data: any, status: number }> {
-        return this.op(HTTP2_METHOD_GET, path, undefined, undefined, opts, cred)
+        return this.op(HTTP2_METHOD_GET, path, undefined, undefined, { ...opts, endStream: true }, cred)
     }
 
     /**
@@ -365,7 +376,7 @@ export class Http2Fetch {
      * @returns the response data and status code value
      */
     delete(path: string, opts?: http2.ClientSessionRequestOptions, cred?: CredentialTuple): Promise<{ data: any, status: number }> {
-        return this.op(HTTP2_METHOD_DELETE, path, undefined, undefined, opts, cred)
+        return this.op(HTTP2_METHOD_DELETE, path, undefined, undefined, { ...opts, endStream: true }, cred)
     }
 
     /**
@@ -377,7 +388,7 @@ export class Http2Fetch {
      * @returns the response data and status code value
      */
     post(path: string, body: any, contentType = 'application/json', opts?: http2.ClientSessionRequestOptions, cred?: CredentialTuple): Promise<{ data: any, status: number }> {
-        return this.op(HTTP2_METHOD_POST, path, body, contentType, opts, cred)
+        return this.op(HTTP2_METHOD_POST, path, body, contentType, { ...opts, endStream: false }, cred)
     }
 
     /**
@@ -389,7 +400,7 @@ export class Http2Fetch {
      * @returns the response data and status code value
      */
     put(path: string, body: any, contentType = 'application/json', opts?: http2.ClientSessionRequestOptions, cred?: CredentialTuple): Promise<{ data: any, status: number }> {
-        return this.op(HTTP2_METHOD_PUT, path, body, contentType, opts, cred)
+        return this.op(HTTP2_METHOD_PUT, path, body, contentType, { ...opts, endStream: false }, cred)
     }
 }
 

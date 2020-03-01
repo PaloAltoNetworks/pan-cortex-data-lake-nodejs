@@ -12,8 +12,8 @@
 // limitations under the License.
 
 const EUFQDN = 'api.nl.cdl.paloaltonetworks.com'
-// const USFQDN = 'api.us.cdl.paloaltonetworks.com'
-const USFQDN = 'cortex-prd1-api.us.cdl.paloaltonetworks.com'
+const USFQDN = 'api.us.cdl.paloaltonetworks.com'
+// const USFQDN = 'cortex-prd1-api.us.cdl.paloaltonetworks.com'
 
 /**
  * Cortex constants

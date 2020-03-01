@@ -35,7 +35,7 @@ operation failed
 
 \+ **new SdkError**(`errorType`: keyof typeof ErrorTypes, ...`params`: any[]): *[SdkError](sdkerror.md)*
 
-Defined in src/sdkError.ts:59
+*Defined in [src/sdkError.ts:59](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/sdkError.ts#L59)*
 
 **Parameters:**
 
@@ -52,7 +52,7 @@ Name | Type |
 
 • **errorType**: *keyof typeof ErrorTypes*
 
-Defined in src/sdkError.ts:59
+*Defined in [src/sdkError.ts:59](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/sdkError.ts#L59)*
 
 ___
 

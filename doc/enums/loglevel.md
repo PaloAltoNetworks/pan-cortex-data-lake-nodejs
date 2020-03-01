@@ -20,7 +20,7 @@ Log levels supported
 
 • **DEBUG**:
 
-Defined in src/commonlogger.ts:20
+*Defined in [src/commonlogger.ts:20](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/commonlogger.ts#L20)*
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 • **ERROR**:
 
-Defined in src/commonlogger.ts:23
+*Defined in [src/commonlogger.ts:23](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/commonlogger.ts#L23)*
 
 ___
 
@@ -36,7 +36,7 @@ ___
 
 • **INFO**:
 
-Defined in src/commonlogger.ts:21
+*Defined in [src/commonlogger.ts:21](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/commonlogger.ts#L21)*
 
 ___
 
@@ -44,7 +44,7 @@ ___
 
 • **NONE**:
 
-Defined in src/commonlogger.ts:24
+*Defined in [src/commonlogger.ts:24](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/commonlogger.ts#L24)*
 
 ___
 
@@ -52,4 +52,4 @@ ___
 
 • **WARNING**:
 
-Defined in src/commonlogger.ts:22
+*Defined in [src/commonlogger.ts:22](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/commonlogger.ts#L22)*
