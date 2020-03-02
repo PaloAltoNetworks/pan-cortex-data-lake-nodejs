@@ -19,7 +19,7 @@
 
 • **canceled**:
 
-Defined in src/query/query_service_models.ts:128
+*Defined in [src/query/query_service_models.ts:128](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_models.ts#L128)*
 
 ___
 
@@ -27,7 +27,7 @@ ___
 
 • **done**:
 
-Defined in src/query/query_service_models.ts:125
+*Defined in [src/query/query_service_models.ts:125](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_models.ts#L125)*
 
 ___
 
@@ -35,7 +35,7 @@ ___
 
 • **failed**:
 
-Defined in src/query/query_service_models.ts:126
+*Defined in [src/query/query_service_models.ts:126](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_models.ts#L126)*
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 • **pending**:
 
-Defined in src/query/query_service_models.ts:123
+*Defined in [src/query/query_service_models.ts:123](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_models.ts#L123)*
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 • **running**:
 
-Defined in src/query/query_service_models.ts:124
+*Defined in [src/query/query_service_models.ts:124](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_models.ts#L124)*
 
 ___
 
@@ -59,4 +59,4 @@ ___
 
 • **timedout**:
 
-Defined in src/query/query_service_models.ts:127
+*Defined in [src/query/query_service_models.ts:127](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_models.ts#L127)*

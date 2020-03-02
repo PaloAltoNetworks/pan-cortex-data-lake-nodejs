@@ -34,7 +34,7 @@ get insights on why the operation could not be completed
 
 *Overrides [SdkError](sdkerror.md).[constructor](sdkerror.md#constructor)*
 
-Defined in src/query/query_service_client_error.ts:29
+*Defined in [src/query/query_service_client_error.ts:29](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_client_error.ts#L29)*
 
 **Parameters:**
 
@@ -53,7 +53,7 @@ Name | Type |
 
 *Inherited from [SdkError](sdkerror.md).[errorType](sdkerror.md#errortype)*
 
-Defined in src/sdkError.ts:59
+*Defined in [src/sdkError.ts:59](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/sdkError.ts#L59)*
 
 ___
 
@@ -61,7 +61,7 @@ ___
 
 • **jobId**: *string*
 
-Defined in src/query/query_service_client_error.ts:29
+*Defined in [src/query/query_service_client_error.ts:29](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_client_error.ts#L29)*
 
 Job identifier associated to the operation
 
@@ -101,6 +101,6 @@ ___
 
 • **status**: *[JobState](../README.md#jobstate)*
 
-Defined in src/query/query_service_client_error.ts:25
+*Defined in [src/query/query_service_client_error.ts:25](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_client_error.ts#L25)*
 
 State of the job when the error was thrown
