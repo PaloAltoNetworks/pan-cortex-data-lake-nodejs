@@ -96,7 +96,7 @@
 
 Ƭ **CredentialTuple**: *object*
 
-Defined in src/http2client.ts:75
+*Defined in [src/http2client.ts:80](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/http2client.ts#L80)*
 
 Credential tuple
 
@@ -114,7 +114,7 @@ ___
 
 Ƭ **GetJobResultsOpts**: *object*
 
-Defined in src/query/query_service_models.ts:308
+*Defined in [src/query/query_service_models.ts:308](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_models.ts#L308)*
 
 Configuration options for the Get Job Results Query API call
 
@@ -138,7 +138,7 @@ ___
 
 Ƭ **GetJobsListOpts**: *object*
 
-Defined in src/query/query_service_models.ts:355
+*Defined in [src/query/query_service_models.ts:355](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_models.ts#L355)*
 
 Configuration options for the Get Jobs List Query API call
 
@@ -158,7 +158,7 @@ ___
 
 Ƭ **JobState**: *"PENDING" | "RUNNING" | "DONE" | "FAILED" | "CANCELLED"*
 
-Defined in src/query/query_service_models.ts:134
+*Defined in [src/query/query_service_models.ts:134](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_models.ts#L134)*
 
 The different states a query job can be
 
@@ -168,7 +168,7 @@ ___
 
 Ƭ **Query**: *object*
 
-Defined in src/query/query_service_models.ts:84
+*Defined in [src/query/query_service_models.ts:84](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_models.ts#L84)*
 
 Interface that describes a query job
 
@@ -184,7 +184,7 @@ ___
 
 Ƭ **QueryApiError**: *object*
 
-Defined in src/query/query_service_models.ts:277
+*Defined in [src/query/query_service_models.ts:277](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_models.ts#L277)*
 
 Model of a query service error response
 
@@ -202,7 +202,7 @@ ___
 
 Ƭ **QueryJobDetail**: *object*
 
-Defined in src/query/query_service_models.ts:143
+*Defined in [src/query/query_service_models.ts:143](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_models.ts#L143)*
 
 Detailed information about a query job
 
@@ -230,7 +230,7 @@ ___
 
 Ƭ **QueryJobResp**: *object*
 
-Defined in src/query/query_service_models.ts:99
+*Defined in [src/query/query_service_models.ts:99](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_models.ts#L99)*
 
 Models the response provided by the Query Service
 
@@ -246,7 +246,7 @@ ___
 
 Ƭ **QueryParams**: *object*
 
-Defined in src/query/query_service_models.ts:17
+*Defined in [src/query/query_service_models.ts:17](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_models.ts#L17)*
 
 Describes mandatory and optional configuration options to perform a query job
 
@@ -264,7 +264,7 @@ ___
 
 Ƭ **QueryResultResp**: *object*
 
-Defined in src/query/query_service_models.ts:215
+*Defined in [src/query/query_service_models.ts:215](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_models.ts#L215)*
 
 Model of a query service result response
 
@@ -296,7 +296,7 @@ ___
 
 Ƭ **ResultFormat**: *"valuesArray" | "valuesDictionary"*
 
-Defined in src/query/query_service_models.ts:210
+*Defined in [src/query/query_service_models.ts:210](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_models.ts#L210)*
 
 The different formats a job query result could have
 
@@ -306,7 +306,7 @@ The different formats a job query result could have
 
 • **APIEPMAP**: *object*
 
-Defined in src/http2client.ts:33
+*Defined in [src/http2client.ts:33](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/http2client.ts#L33)*
 
 #### Type declaration:
 
@@ -320,7 +320,7 @@ ___
 
 • **DEFAULT_DELAY**: *200* = 200
 
-Defined in src/query/query_service_client.ts:22
+*Defined in [src/query/query_service_client.ts:22](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_client.ts#L22)*
 
 ___
 
@@ -328,7 +328,7 @@ ___
 
 • **DEFAULT_PAGE_SIZE**: *400* = 400
 
-Defined in src/query/query_service_client.ts:23
+*Defined in [src/query/query_service_client.ts:23](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_client.ts#L23)*
 
 ___
 
@@ -336,7 +336,7 @@ ___
 
 • **EP_QUERY**: *string*
 
-Defined in src/query/query_service.ts:25
+*Defined in [src/query/query_service.ts:25](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service.ts#L25)*
 
 ___
 
@@ -344,7 +344,7 @@ ___
 
 • **EUFQDN**: *"api.nl.cdl.paloaltonetworks.com"* = "api.nl.cdl.paloaltonetworks.com"
 
-Defined in src/constants.ts:14
+*Defined in [src/constants.ts:14](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/constants.ts#L14)*
 
 ___
 
@@ -352,7 +352,7 @@ ___
 
 • **HTTP2_HEADER_AUTHORIZATION**: *string*
 
-Defined in src/http2client.ts:28
+*Defined in [src/http2client.ts:28](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/http2client.ts#L28)*
 
 ___
 
@@ -360,7 +360,7 @@ ___
 
 • **HTTP2_HEADER_CONTENT_LENGTH**: *string*
 
-Defined in src/http2client.ts:30
+*Defined in [src/http2client.ts:30](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/http2client.ts#L30)*
 
 ___
 
@@ -368,7 +368,7 @@ ___
 
 • **HTTP2_HEADER_CONTENT_TYPE**: *string*
 
-Defined in src/http2client.ts:29
+*Defined in [src/http2client.ts:29](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/http2client.ts#L29)*
 
 ___
 
@@ -376,7 +376,7 @@ ___
 
 • **HTTP2_HEADER_METHOD**: *string*
 
-Defined in src/http2client.ts:26
+*Defined in [src/http2client.ts:26](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/http2client.ts#L26)*
 
 ___
 
@@ -384,7 +384,7 @@ ___
 
 • **HTTP2_HEADER_PATH**: *string*
 
-Defined in src/http2client.ts:25
+*Defined in [src/http2client.ts:25](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/http2client.ts#L25)*
 
 ___
 
@@ -392,7 +392,7 @@ ___
 
 • **HTTP2_HEADER_STATUS**: *string*
 
-Defined in src/http2client.ts:27
+*Defined in [src/http2client.ts:27](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/http2client.ts#L27)*
 
 ___
 
@@ -400,7 +400,7 @@ ___
 
 • **HTTP2_METHOD_DELETE**: *string*
 
-Defined in src/http2client.ts:22
+*Defined in [src/http2client.ts:22](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/http2client.ts#L22)*
 
 ___
 
@@ -408,7 +408,7 @@ ___
 
 • **HTTP2_METHOD_GET**: *string*
 
-Defined in src/http2client.ts:21
+*Defined in [src/http2client.ts:21](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/http2client.ts#L21)*
 
 ___
 
@@ -416,7 +416,7 @@ ___
 
 • **HTTP2_METHOD_POST**: *string*
 
-Defined in src/http2client.ts:23
+*Defined in [src/http2client.ts:23](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/http2client.ts#L23)*
 
 ___
 
@@ -424,7 +424,7 @@ ___
 
 • **HTTP2_METHOD_PUT**: *string*
 
-Defined in src/http2client.ts:24
+*Defined in [src/http2client.ts:24](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/http2client.ts#L24)*
 
 ___
 
@@ -432,15 +432,15 @@ ___
 
 • **MAX_RETRIES**: *10* = 10
 
-Defined in src/query/query_service_client.ts:21
+*Defined in [src/query/query_service_client.ts:21](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_client.ts#L21)*
 
 ___
 
 ### `Const` USFQDN
 
-• **USFQDN**: *"cortex-prd1-api.us.cdl.paloaltonetworks.com"* = "cortex-prd1-api.us.cdl.paloaltonetworks.com"
+• **USFQDN**: *"api.us.cdl.paloaltonetworks.com"* = "api.us.cdl.paloaltonetworks.com"
 
-Defined in src/constants.ts:16
+*Defined in [src/constants.ts:15](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/constants.ts#L15)*
 
 ___
 
@@ -448,7 +448,7 @@ ___
 
 • **currentLogLevel**: *[logLevel](enums/loglevel.md)* = (isNaN(envLevel) && logLevel.INFO) || envLevel
 
-Defined in src/commonlogger.ts:27
+*Defined in [src/commonlogger.ts:27](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/commonlogger.ts#L27)*
 
 ___
 
@@ -456,7 +456,7 @@ ___
 
 • **envLevel**: *number* = Number.parseInt(process.env['CORTEX_SDK_LOG'] || '', 10)
 
-Defined in src/commonlogger.ts:26
+*Defined in [src/commonlogger.ts:26](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/commonlogger.ts#L26)*
 
 ___
 
@@ -464,7 +464,7 @@ ___
 
 • **initJobCount**: *number* = Date.now()
 
-Defined in src/query/query_service_client.ts:25
+*Defined in [src/query/query_service_client.ts:25](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_client.ts#L25)*
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 • **logFunc**: *debug[]* = [console.debug, console.info, console.warn, console.error]
 
-Defined in src/commonlogger.ts:28
+*Defined in [src/commonlogger.ts:28](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/commonlogger.ts#L28)*
 
 ___
 
@@ -480,7 +480,7 @@ ___
 
 • **seqno**: *number* = Math.floor(Math.random() * 10000)
 
-Defined in src/http2client.ts:35
+*Defined in [src/http2client.ts:35](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/http2client.ts#L35)*
 
 ## Functions
 
@@ -488,7 +488,7 @@ Defined in src/http2client.ts:35
 
 ▸ **commonLogger**(`error`: [Error](classes/sdkerror.md#static-error)): *void*
 
-Defined in src/commonlogger.ts:34
+*Defined in [src/commonlogger.ts:34](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/commonlogger.ts#L34)*
 
 logs an error object
 
@@ -502,7 +502,7 @@ Name | Type | Description |
 
 ▸ **commonLogger**(`level`: [logLevel](enums/loglevel.md), `message`: string, `noPrefix?`: undefined | false | true): *void*
 
-Defined in src/commonlogger.ts:41
+*Defined in [src/commonlogger.ts:41](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/commonlogger.ts#L41)*
 
 logs a message string
 
@@ -522,7 +522,7 @@ ___
 
 ▸ **isJobState**(`obj`: any): *obj is JobState*
 
-Defined in src/query/query_service_models.ts:136
+*Defined in [src/query/query_service_models.ts:136](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_models.ts#L136)*
 
 **Parameters:**
 
@@ -538,7 +538,7 @@ ___
 
 ▸ **isQueryApiError**(`obj`: any): *obj is QueryApiError*
 
-Defined in src/query/query_service_models.ts:298
+*Defined in [src/query/query_service_models.ts:298](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_models.ts#L298)*
 
 Convenience type guard function to check if an object conforms to the
 `QueryApiError` interface
@@ -559,7 +559,7 @@ ___
 
 ▸ **isQueryJobDetail**(`obj`: any): *obj is QueryJobDetail*
 
-Defined in src/query/query_service_models.ts:195
+*Defined in [src/query/query_service_models.ts:195](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_models.ts#L195)*
 
 Convenience type guard function to check if a object conforms to the
 `QueryJobDetail` interface
@@ -580,7 +580,7 @@ ___
 
 ▸ **isQueryJobResp**(`obj`: any): *obj is QueryJobResp*
 
-Defined in src/query/query_service_models.ts:116
+*Defined in [src/query/query_service_models.ts:116](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_models.ts#L116)*
 
 Convenience type guard function to check if a object conforms to the
 `QueryJobResp` interface.
@@ -601,7 +601,7 @@ ___
 
 ▸ **isQueryParams**(`obj`: any): *obj is QueryParams*
 
-Defined in src/query/query_service_models.ts:68
+*Defined in [src/query/query_service_models.ts:68](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_models.ts#L68)*
 
 **Parameters:**
 
@@ -617,7 +617,7 @@ ___
 
 ▸ **isQueryResultResp**(`obj`: any): *obj is QueryResultResp*
 
-Defined in src/query/query_service_models.ts:264
+*Defined in [src/query/query_service_models.ts:264](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_models.ts#L264)*
 
 Convenienece method to check if an object conforms to the `QueryResultResp` interface
 
@@ -637,7 +637,7 @@ ___
 
 ▸ **setLogLevel**(`level`: [logLevel](enums/loglevel.md)): *void*
 
-Defined in src/commonlogger.ts:63
+*Defined in [src/commonlogger.ts:63](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/commonlogger.ts#L63)*
 
 Change the log level of the common logger at runtime
 
@@ -655,7 +655,7 @@ ___
 
 ▸ **uuid**(): *string*
 
-Defined in src/query/query_service_client.ts:27
+*Defined in [src/query/query_service_client.ts:27](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_client.ts#L27)*
 
 **Returns:** *string*
 
@@ -665,7 +665,7 @@ Defined in src/query/query_service_client.ts:27
 
 ### ▪ **cortexConstants**: *object*
 
-Defined in src/constants.ts:21
+*Defined in [src/constants.ts:21](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/constants.ts#L21)*
 
 Cortex constants
 
@@ -673,7 +673,7 @@ Cortex constants
 
 • **DEV_TOKEN_PROVIDER**: *string* = "https://app.developers.paloaltonetworks.com/request_token"
 
-Defined in src/constants.ts:64
+*Defined in [src/constants.ts:64](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/constants.ts#L64)*
 
 URL of the Palo Alto Networks Developers Relations developer token service
 
@@ -681,7 +681,7 @@ URL of the Palo Alto Networks Developers Relations developer token service
 
 • **EP_QUERY**: *string* = "/query/v2"
 
-Defined in src/constants.ts:42
+*Defined in [src/constants.ts:42](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/constants.ts#L42)*
 
 API path for the Cortex Query Service
 
@@ -689,7 +689,7 @@ API path for the Cortex Query Service
 
 • **EP_SCHEMA**: *string* = "/schema/v2/schemas"
 
-Defined in src/constants.ts:38
+*Defined in [src/constants.ts:38](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/constants.ts#L38)*
 
 API path for the Cortex Schema Service
 
@@ -697,7 +697,7 @@ API path for the Cortex Schema Service
 
 • **IDP_AUTH_URL**: *string* = "https://identity.paloaltonetworks.com/as/authorization.oauth2"
 
-Defined in src/constants.ts:60
+*Defined in [src/constants.ts:60](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/constants.ts#L60)*
 
 Identity provider URL for token operations
 
@@ -705,7 +705,7 @@ Identity provider URL for token operations
 
 • **IDP_REVOKE_URL**: *string* = "https://api.paloaltonetworks.com/api/oauth2/RevokeToken"
 
-Defined in src/constants.ts:56
+*Defined in [src/constants.ts:56](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/constants.ts#L56)*
 
 Identity provider URL for token revoke operations
 
@@ -713,13 +713,13 @@ Identity provider URL for token revoke operations
 
 • **IDP_TOKEN_URL**: *string* = "https://api.paloaltonetworks.com/api/oauth2/RequestToken"
 
-Defined in src/constants.ts:52
+*Defined in [src/constants.ts:52](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/constants.ts#L52)*
 
 Identity provider URL for authentication requests
 
 ▪ **APIEPMAP**: *object*
 
-Defined in src/constants.ts:25
+*Defined in [src/constants.ts:25](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/constants.ts#L25)*
 
 Map that links Cortex Data Lake regions with their corresponding FQDNs
 
@@ -729,7 +729,7 @@ Map that links Cortex Data Lake regions with their corresponding FQDNs
 
 ▪ **OAUTH2SCOPEMAP**: *object*
 
-Defined in src/constants.ts:46
+*Defined in [src/constants.ts:46](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/constants.ts#L46)*
 
 OAuth2 Identity Provider scopes for the Cortex Data Lake
 

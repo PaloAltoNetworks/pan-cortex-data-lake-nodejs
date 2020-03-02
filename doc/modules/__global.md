@@ -20,4 +20,4 @@ With this declaration we override the tsc compilation errors of the avsc package
 
 Ƭ **Blob**: *any*
 
-Defined in src/index.ts:21
+*Defined in [src/index.ts:21](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/index.ts#L21)*

@@ -37,7 +37,7 @@ insights on why the operation could not be completed
 
 *Overrides [SdkError](sdkerror.md).[constructor](sdkerror.md#constructor)*
 
-Defined in src/query/query_service_error.ts:43
+*Defined in [src/query/query_service_error.ts:43](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_error.ts#L43)*
 
 **Parameters:**
 
@@ -56,7 +56,7 @@ Name | Type |
 
 *Inherited from [SdkError](sdkerror.md).[errorType](sdkerror.md#errortype)*
 
-Defined in src/sdkError.ts:59
+*Defined in [src/sdkError.ts:59](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/sdkError.ts#L59)*
 
 ___
 
@@ -64,7 +64,7 @@ ___
 
 • **errors**: *[QueryApiError](../README.md#queryapierror)[]*
 
-Defined in src/query/query_service_error.ts:35
+*Defined in [src/query/query_service_error.ts:35](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_error.ts#L35)*
 
 Array of errors provided by the Cortex API GW
 
@@ -74,7 +74,7 @@ ___
 
 • **jobId**? : *undefined | string*
 
-Defined in src/query/query_service_error.ts:39
+*Defined in [src/query/query_service_error.ts:39](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_error.ts#L39)*
 
 job identifier
 
@@ -104,7 +104,7 @@ ___
 
 • **sourceError**: *[Error](sdkerror.md#static-error)*
 
-Defined in src/query/query_service_error.ts:27
+*Defined in [src/query/query_service_error.ts:27](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_error.ts#L27)*
 
 Underlying class that originated the error
 
@@ -124,7 +124,7 @@ ___
 
 • **status**: *number*
 
-Defined in src/query/query_service_error.ts:31
+*Defined in [src/query/query_service_error.ts:31](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_error.ts#L31)*
 
 http2 status code in the response
 
@@ -134,6 +134,6 @@ ___
 
 • **uri**? : *undefined | string*
 
-Defined in src/query/query_service_error.ts:43
+*Defined in [src/query/query_service_error.ts:43](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_error.ts#L43)*
 
 The called uri that triggered the error

@@ -28,6 +28,11 @@ export interface Http2FetchOpts extends http2.ClientSessionOptions, http2.Secure
      * If provided, then all operations will use this `Credential`'s JWT token
      */
     cortexDefCredentials?: Credentials;
+    /**
+     * How many milliseconds to keep an inactive HTTP2 session to the Cortex API
+     * GW (default = 60000)
+     */
+    cortexTimeout?: number;
 }
 /**
  * Credential tuple
@@ -54,6 +59,7 @@ export declare class Http2Fetch {
     private defaultEntrypoint;
     private defaultCred?;
     private opts?;
+    private cortexTimeout;
     /**
      * Instantiates a new `Http2Fetch` object from provided configuration
      * options. You must provide, at least, `cortexBaseFqdn` or `cortexDefCredentials`
