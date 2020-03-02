@@ -122,7 +122,7 @@ export class Http2Fetch {
         this.defaultCred = opts && opts.cortexDefCredentials && { cred: opts.cortexDefCredentials, entrypoint: opts.cortexDefCredentials.getEntryPoint(), dlid: "" }
         this.defaultEntrypoint = opts && opts.cortexBaseFqdn || APIEPMAP['americas']
         this.sessions = {}
-        this.cortexTimeout = opts && opts.cortexTimeout || 60000
+        this.cortexTimeout = opts && opts.cortexTimeout || 10000
     }
 
     async init(c?: CredentialTuple): Promise<void> {
@@ -309,7 +309,6 @@ export class Http2Fetch {
         /*
         stream.on('ready', (...e) => console.log("READY", e))
         stream.on('aborted', (...e) => console.log("ABORTED", e))
-        stream.on('close', (...e) => console.log("CLOSE", e))
         stream.on('frameError', (...e) => console.log("FRAMEERROR", e))
         stream.on('timeout', (...e) => console.log("TIMEOUT", e))
         */
@@ -332,7 +331,7 @@ export class Http2Fetch {
         let readPromise = new Promise((res, rej) => {
             let data = ''
             stream.on('data', chunk => data += chunk)
-            stream.on('end', () => {
+            stream.on('end', () => process.nextTick(() => {
                 if (data.length == 0) {
                     commonLogger(logLevel.DEBUG, `[${seqno}] http2 read: null`)
                     return res()
@@ -342,7 +341,8 @@ export class Http2Fetch {
                     return res(JSON.parse(data))
                 }
                 return res(data)
-            })
+            }))
+            stream.on('close', () => { })
             stream.on('error', e => {
                 rej(e)
             })
