@@ -1,6 +1,6 @@
 {
   "name": "@paloaltonetworks/pan-cortex-data-lake",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Palo Alto Networks Cortex Data Lake client library",
   "homepage": "https://github.com/PaloAltoNetworks/pan-cortex-data-lake-nodejs#readme",
   "repository": {

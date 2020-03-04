@@ -32,7 +32,7 @@
 
 \+ **new QueryIterator**(`sqlCommand`: string, `qsc`: [QueryServiceClient](queryserviceclient.md), `cred?`: [CredentialTuple](../README.md#credentialtuple)): *[QueryIterator](queryiterator.md)*
 
-*Defined in [src/query/query_service_client.ts:90](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_client.ts#L90)*
+*Defined in [src/query/query_service_client.ts:91](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_client.ts#L91)*
 
 **Parameters:**
 
@@ -50,7 +50,7 @@ Name | Type |
 
 • **cred**? : *[CredentialTuple](../README.md#credentialtuple)*
 
-*Defined in [src/query/query_service_client.ts:90](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_client.ts#L90)*
+*Defined in [src/query/query_service_client.ts:91](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_client.ts#L91)*
 
 ## Methods
 
@@ -58,7 +58,7 @@ Name | Type |
 
 ▸ **[Symbol.asyncIterator]**(): *AsyncIterableIterator‹any›*
 
-*Defined in [src/query/query_service_client.ts:97](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_client.ts#L97)*
+*Defined in [src/query/query_service_client.ts:98](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_client.ts#L98)*
 
 **Returns:** *AsyncIterableIterator‹any›*
 
@@ -68,7 +68,7 @@ ___
 
 ▸ **next**(): *Promise‹IteratorResult‹any››*
 
-*Defined in [src/query/query_service_client.ts:101](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_client.ts#L101)*
+*Defined in [src/query/query_service_client.ts:102](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_client.ts#L102)*
 
 **Returns:** *Promise‹IteratorResult‹any››*
 
@@ -78,6 +78,6 @@ ___
 
 ▸ **return**(): *Promise‹IteratorResult‹any››*
 
-*Defined in [src/query/query_service_client.ts:121](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_client.ts#L121)*
+*Defined in [src/query/query_service_client.ts:122](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_client.ts#L122)*
 
 **Returns:** *Promise‹IteratorResult‹any››*
