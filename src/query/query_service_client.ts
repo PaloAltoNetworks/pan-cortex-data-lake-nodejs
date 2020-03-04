@@ -67,7 +67,8 @@ class QueryWorker {
             this.jobId = (await this.createJob(
                 { jobId: uuid(), params: { query: this.sqlCommand } },
                 this.cred)).jobId
-            let { state } = await this.getJobStatus(this.jobId, this.cred)
+            const jobDetail = await this.getJobStatus(this.jobId, this.cred)
+            let state = jobDetail.state
             let attempts = 0
             while ((state == 'PENDING' || state == 'RUNNING') && attempts++ < this.qsc.retries) {
                 state = await new Promise((res, rej) => setTimeout(async () => {
@@ -79,7 +80,7 @@ class QueryWorker {
                 }, this.qsc.delay))
             }
             if (attempts >= this.qsc.retries) throw new QueryServiceClientError(this.jobId, `JobId ${this.jobId} still in status ${state} after ${attempts} attempts`)
-            if (state != 'DONE') throw new QueryServiceClientError(this.jobId, `JobId ${this.jobId} failed with status ${state}`)
+            if (state != 'DONE') throw QueryServiceClientError.fromQueryJobDetails(jobDetail)
             await this.loadPage()
         }
     }

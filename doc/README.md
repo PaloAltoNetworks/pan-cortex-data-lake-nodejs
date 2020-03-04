@@ -114,7 +114,7 @@ ___
 
 Ƭ **GetJobResultsOpts**: *object*
 
-*Defined in [src/query/query_service_models.ts:308](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_models.ts#L308)*
+*Defined in [src/query/query_service_models.ts:316](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_models.ts#L316)*
 
 Configuration options for the Get Job Results Query API call
 
@@ -138,7 +138,7 @@ ___
 
 Ƭ **GetJobsListOpts**: *object*
 
-*Defined in [src/query/query_service_models.ts:355](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_models.ts#L355)*
+*Defined in [src/query/query_service_models.ts:363](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_models.ts#L363)*
 
 Configuration options for the Get Jobs List Query API call
 
@@ -184,7 +184,7 @@ ___
 
 Ƭ **QueryApiError**: *object*
 
-*Defined in [src/query/query_service_models.ts:277](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_models.ts#L277)*
+*Defined in [src/query/query_service_models.ts:285](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_models.ts#L285)*
 
 Model of a query service error response
 
@@ -209,6 +209,8 @@ Detailed information about a query job
 #### Type declaration:
 
 * **endTime**? : *undefined | number*
+
+* **errors**? : *object[]*
 
 * **jobId**: *string*
 
@@ -264,7 +266,7 @@ ___
 
 Ƭ **QueryResultResp**: *object*
 
-*Defined in [src/query/query_service_models.ts:215](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_models.ts#L215)*
+*Defined in [src/query/query_service_models.ts:223](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_models.ts#L223)*
 
 Model of a query service result response
 
@@ -296,7 +298,7 @@ ___
 
 Ƭ **ResultFormat**: *"valuesArray" | "valuesDictionary"*
 
-*Defined in [src/query/query_service_models.ts:210](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_models.ts#L210)*
+*Defined in [src/query/query_service_models.ts:218](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_models.ts#L218)*
 
 The different formats a job query result could have
 
@@ -538,7 +540,7 @@ ___
 
 ▸ **isQueryApiError**(`obj`: any): *obj is QueryApiError*
 
-*Defined in [src/query/query_service_models.ts:298](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_models.ts#L298)*
+*Defined in [src/query/query_service_models.ts:306](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_models.ts#L306)*
 
 Convenience type guard function to check if an object conforms to the
 `QueryApiError` interface
@@ -559,7 +561,7 @@ ___
 
 ▸ **isQueryJobDetail**(`obj`: any): *obj is QueryJobDetail*
 
-*Defined in [src/query/query_service_models.ts:195](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_models.ts#L195)*
+*Defined in [src/query/query_service_models.ts:202](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_models.ts#L202)*
 
 Convenience type guard function to check if a object conforms to the
 `QueryJobDetail` interface
@@ -617,7 +619,7 @@ ___
 
 ▸ **isQueryResultResp**(`obj`: any): *obj is QueryResultResp*
 
-*Defined in [src/query/query_service_models.ts:264](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_models.ts#L264)*
+*Defined in [src/query/query_service_models.ts:272](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_models.ts#L272)*
 
 Convenienece method to check if an object conforms to the `QueryResultResp` interface
 

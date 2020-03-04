@@ -184,6 +184,13 @@ export type QueryJobDetail = {
         cachePct?: number,
         etaMs?: number
     }
+    /**
+     * Provides additional information in case of error
+     */
+    errors?: {
+        message: string,
+        context: string
+    }[]
 }
 
 /**
@@ -201,7 +208,8 @@ export function isQueryJobDetail(obj: any): obj is QueryJobDetail {
         (obj.endTime === undefined || typeof obj.endTime == 'number') &&
         (obj.progress === undefined || typeof obj.progress == 'object' && typeof obj.progress.completionPct == 'number') &&
         (obj.params === undefined || typeof obj.params == 'object' && isQueryParams(obj.params)) &&
-        (obj.statistics === undefined || typeof obj.statistics == 'object')
+        (obj.statistics === undefined || typeof obj.statistics == 'object') &&
+        (obj.errors === undefined || typeof obj.errors == 'object')
 }
 
 /**

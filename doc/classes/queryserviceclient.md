@@ -44,7 +44,7 @@ Data Lake queries.
 
 *Overrides [QueryService](queryservice.md).[constructor](queryservice.md#constructor)*
 
-*Defined in [src/query/query_service_client.ts:216](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_client.ts#L216)*
+*Defined in [src/query/query_service_client.ts:217](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_client.ts#L217)*
 
 Use the constructor if you want to create a new `QueryService` object
 sharing an existing `HttpdFetch` object with other objects.
@@ -64,7 +64,7 @@ Name | Type | Description |
 
 • **autoClose**: *boolean*
 
-*Defined in [src/query/query_service_client.ts:216](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_client.ts#L216)*
+*Defined in [src/query/query_service_client.ts:217](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_client.ts#L217)*
 
 ___
 
@@ -72,7 +72,7 @@ ___
 
 • **delay**: *number*
 
-*Defined in [src/query/query_service_client.ts:214](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_client.ts#L214)*
+*Defined in [src/query/query_service_client.ts:215](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_client.ts#L215)*
 
 ___
 
@@ -80,7 +80,7 @@ ___
 
 • **pageSize**: *number*
 
-*Defined in [src/query/query_service_client.ts:213](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_client.ts#L213)*
+*Defined in [src/query/query_service_client.ts:214](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_client.ts#L214)*
 
 ___
 
@@ -88,7 +88,7 @@ ___
 
 • **retries**: *number*
 
-*Defined in [src/query/query_service_client.ts:215](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_client.ts#L215)*
+*Defined in [src/query/query_service_client.ts:216](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_client.ts#L216)*
 
 ## Methods
 
@@ -237,7 +237,7 @@ ___
 
 ▸ **iterator**(`sqlCommand`: string, `cred?`: [CredentialTuple](../README.md#credentialtuple)): *AsyncIterableIterator‹any[]›*
 
-*Defined in [src/query/query_service_client.ts:245](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_client.ts#L245)*
+*Defined in [src/query/query_service_client.ts:246](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_client.ts#L246)*
 
 Leverages ES2018 async iterator feature to return a way to iterate a
 Cortex Data Lake query response
@@ -259,7 +259,7 @@ ___
 
 ▸ **stream**(`sqlCommand`: string, `opts?`: ReadableOptions, `cred?`: [CredentialTuple](../README.md#credentialtuple)): *ReadableStream*
 
-*Defined in [src/query/query_service_client.ts:257](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_client.ts#L257)*
+*Defined in [src/query/query_service_client.ts:258](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_client.ts#L258)*
 
 Use this method to consume a Cortex Data Lake query reseult set using the
 NodeJS's Stream.Readable interface
@@ -284,7 +284,7 @@ ___
 
 *Overrides [QueryService](queryservice.md).[factory](queryservice.md#static-factory)*
 
-*Defined in [src/query/query_service_client.ts:233](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_client.ts#L233)*
+*Defined in [src/query/query_service_client.ts:234](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_client.ts#L234)*
 
 **Parameters:**
 
