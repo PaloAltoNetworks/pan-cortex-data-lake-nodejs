@@ -143,6 +143,13 @@ export declare type QueryJobDetail = {
         cachePct?: number;
         etaMs?: number;
     };
+    /**
+     * Provides additional information in case of error
+     */
+    errors?: {
+        message: string;
+        context: string;
+    }[];
 };
 /**
  * Convenience type guard function to check if a object conforms to the
