@@ -67,7 +67,7 @@
 
 *Overrides void*
 
-*Defined in [src/query/query_service_client.ts:151](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_client.ts#L151)*
+*Defined in [src/query/query_service_client.ts:152](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_client.ts#L152)*
 
 **Parameters:**
 
@@ -150,7 +150,7 @@ ___
 
 *Overrides void*
 
-*Defined in [src/query/query_service_client.ts:172](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_client.ts#L172)*
+*Defined in [src/query/query_service_client.ts:173](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_client.ts#L173)*
 
 **Parameters:**
 
@@ -176,7 +176,7 @@ ___
 
 *Overrides void*
 
-*Defined in [src/query/query_service_client.ts:159](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_client.ts#L159)*
+*Defined in [src/query/query_service_client.ts:160](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_client.ts#L160)*
 
 **Returns:** *void*
 

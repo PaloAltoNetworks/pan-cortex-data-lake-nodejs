@@ -24,7 +24,7 @@ Configuration options for the QueryServiceClient object
 
 • **autoClose**? : *undefined | false | true*
 
-*Defined in [src/query/query_service_client.ts:202](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_client.ts#L202)*
+*Defined in [src/query/query_service_client.ts:203](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_client.ts#L203)*
 
 By default the iterator or stream will close the underlying HTTP2 session
 at the end. Switch this flag to false to revert this behaviour. You might
@@ -36,7 +36,7 @@ ___
 
 • **cred**? : *[CredentialTuple](../README.md#credentialtuple)*
 
-*Defined in [src/query/query_service_client.ts:206](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_client.ts#L206)*
+*Defined in [src/query/query_service_client.ts:207](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_client.ts#L207)*
 
 Default `Credentials` object to use by this object's methods
 
@@ -46,7 +46,7 @@ ___
 
 • **delay**? : *undefined | number*
 
-*Defined in [src/query/query_service_client.ts:192](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_client.ts#L192)*
+*Defined in [src/query/query_service_client.ts:193](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_client.ts#L193)*
 
 Milliseconds to wait before attempting the same call again (default: 200)
 
@@ -56,7 +56,7 @@ ___
 
 • **pageSize**? : *undefined | number*
 
-*Defined in [src/query/query_service_client.ts:188](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_client.ts#L188)*
+*Defined in [src/query/query_service_client.ts:189](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_client.ts#L189)*
 
 Max amount of response items in each page (default: 400)
 
@@ -66,6 +66,6 @@ ___
 
 • **retries**? : *undefined | number*
 
-*Defined in [src/query/query_service_client.ts:196](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_client.ts#L196)*
+*Defined in [src/query/query_service_client.ts:197](https://github.com/xhoms/pan-cortex-data-lake-nodejs/blob/master/src/query/query_service_client.ts#L197)*
 
 Amount of retries of the same call (default: 10)
