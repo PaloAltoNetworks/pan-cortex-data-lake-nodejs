@@ -67,13 +67,14 @@ class QueryWorker {
             this.jobId = (await this.createJob(
                 { jobId: uuid(), params: { query: this.sqlCommand } },
                 this.cred)).jobId
-            const jobDetail = await this.getJobStatus(this.jobId, this.cred)
+            let jobDetail = await this.getJobStatus(this.jobId, this.cred)
             let state = jobDetail.state
             let attempts = 0
             while ((state == 'PENDING' || state == 'RUNNING') && attempts++ < this.qsc.retries) {
                 state = await new Promise((res, rej) => setTimeout(async () => {
                     try {
-                        res((await this.getJobStatus(this.jobId!, this.cred)).state)
+                        jobDetail = await this.getJobStatus(this.jobId!, this.cred)
+                        res(jobDetail.state)
                     } catch (e) {
                         rej(e)
                     }
