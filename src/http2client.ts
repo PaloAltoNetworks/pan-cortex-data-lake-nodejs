@@ -252,7 +252,7 @@ export class Http2Fetch {
         if (entryPoint) {
             const targetSession = this.sessions[entryPoint].session
             if (targetSession) {
-                await new Promise((res, rej) => {
+                await new Promise<void>((res, rej) => {
                     targetSession.close(res)
                 })
                 delete this.sessions[entryPoint]
@@ -334,7 +334,7 @@ export class Http2Fetch {
             stream.on('end', () => process.nextTick(() => {
                 if (data.length == 0) {
                     commonLogger(logLevel.DEBUG, `[${seqno}] http2 read: null`)
-                    return res()
+                    return res(undefined)
                 }
                 commonLogger(logLevel.DEBUG, `[${seqno}] http2 read: ${data.length < 200 && data || data.slice(0, 198) + " ..."}`)
                 if (responseContentType && typeof responseContentType == 'string' && responseContentType == 'application/json') {

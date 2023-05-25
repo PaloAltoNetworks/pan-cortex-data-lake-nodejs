@@ -1,4 +1,5 @@
 /// <reference types="node" />
+/// <reference types="node" />
 import { QueryService } from './query_service';
 import { ReadableOptions } from 'stream';
 import { Http2FetchOpts, Http2Fetch, CredentialTuple } from '../http2client';

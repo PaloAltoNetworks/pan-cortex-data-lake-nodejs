@@ -266,7 +266,7 @@ describe.skip('queryAPI', function () {
                     } catch (e) {
                         rej(e)
                     }
-                    rej(new Error("Page #1 error"))
+                    rej(new Error("Page #1 error"))
                 }, 1000))
                 const cursor2 = await new Promise<string>((res, rej) => setTimeout(async () => {
                     try {
@@ -275,16 +275,16 @@ describe.skip('queryAPI', function () {
                     } catch (e) {
                         rej(e)
                     }
-                    rej(new Error("Page #2 error"))
+                    rej(new Error("Page #2 error"))
                 }, 1000))
-                await new Promise<string>((res, rej) => setTimeout(async () => {
+                await new Promise<void>((res, rej) => setTimeout(async () => {
                     try {
                         const jobResults = await qs.getJobResults(jobId, { maxWait: 1000, pageSize: 12, pageCursor: cursor2 })
                         if (jobResults.rowsInJob == 28 && jobResults.rowsInPage == 4 && jobResults.page.pageCursor === null) return res()
                     } catch (e) {
                         rej(e)
                     }
-                    rej(new Error("Page #3 error"))
+                    rej(new Error("Page #3 error"))
                 }, 1000))
             })
         })
@@ -319,7 +319,7 @@ describe.skip('queryAPI', function () {
         it('readable stream in paused mode should work', async function () {
             let index = 0
             let stream = qs.stream(SQL_LONG_COMMAND(records))
-            await assert.doesNotReject(new Promise((res, rej) => {
+            await assert.doesNotReject(new Promise<void>((res, rej) => {
                 stream.on('readable', () => {
                     let data = stream.read()
                     if (data === null) return
@@ -334,7 +334,7 @@ describe.skip('queryAPI', function () {
         it('readable stream in flow mode should work', async function () {
             let index = 0
             let stream = qs.stream(SQL_LONG_COMMAND(records))
-            await assert.doesNotReject(new Promise((res, rej) => {
+            await assert.doesNotReject(new Promise<void>((res, rej) => {
                 stream.on('data', (x) => {
                     if (x === null) return
                     else index += x.length

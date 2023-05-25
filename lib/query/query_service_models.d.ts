@@ -1,7 +1,7 @@
 /**
  * Describes mandatory and optional configuration options to perform a query job
  */
-export declare type QueryParams = {
+export type QueryParams = {
     /**
      * SQL query that identifies the log records you want this query job to retrieve.
      */
@@ -54,7 +54,7 @@ export declare type QueryParams = {
 /**
  * Interface that describes a query job
  */
-export declare type Query = {
+export type Query = {
     /**
      * Identifies the ID that you want the query job to use. This ID must be unique within the service.
      * Maximum length is 1000 characters. May contain any alphanumeric character, and dash (-).
@@ -68,7 +68,7 @@ export declare type Query = {
 /**
  * Models the response provided by the Query Service
  */
-export declare type QueryJobResp = {
+export type QueryJobResp = {
     /**
      * The unique ID assigned to this query job
      */
@@ -96,11 +96,11 @@ declare enum jobState {
 /**
  * The different states a query job can be
  */
-export declare type JobState = 'PENDING' | 'RUNNING' | 'DONE' | 'FAILED' | 'CANCELLED';
+export type JobState = 'PENDING' | 'RUNNING' | 'DONE' | 'FAILED' | 'CANCELLED';
 /**
  * Detailed information about a query job
  */
-export declare type QueryJobDetail = {
+export type QueryJobDetail = {
     /**
      * The unique ID assigned to this query job.
      */
@@ -161,11 +161,11 @@ export declare function isQueryJobDetail(obj: any): obj is QueryJobDetail;
 /**
  * The different formats a job query result could have
  */
-export declare type ResultFormat = 'valuesArray' | 'valuesDictionary';
+export type ResultFormat = 'valuesArray' | 'valuesDictionary';
 /**
  * Model of a query service result response
  */
-export declare type QueryResultResp = {
+export type QueryResultResp = {
     /**
      * The unique ID assigned to this query job
      */
@@ -217,7 +217,7 @@ export declare function isQueryResultResp(obj: any): obj is QueryResultResp;
 /**
  * Model of a query service error response
  */
-export declare type QueryApiError = {
+export type QueryApiError = {
     /**
      * Error code. Typically this is the error code seen in the first element of the errors array.
      */
@@ -241,7 +241,7 @@ export declare function isQueryApiError(obj: any): obj is QueryApiError;
 /**
  * Configuration options for the Get Job Results Query API call
  */
-export declare type GetJobResultsOpts = {
+export type GetJobResultsOpts = {
     /**
      * Maximum number of milliseconds you want the HTTP connection to remain open waiting for a response.
      * If the requested page cannot be returned in this amount of time, the service closes the connection without returning
@@ -287,7 +287,7 @@ export declare type GetJobResultsOpts = {
 /**
  * Configuration options for the Get Jobs List Query API call
  */
-export declare type GetJobsListOpts = {
+export type GetJobsListOpts = {
     tenantId: string;
     /**
      * Lower limit job creation timestamp. Jobs are only listed if they were created after the time identified here.
