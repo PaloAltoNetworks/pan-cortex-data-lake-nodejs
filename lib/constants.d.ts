@@ -9,11 +9,11 @@ export declare const cortexConstants: {
         /**
          * entry point for europe
          */
-        'europe': string;
+        europe: string;
         /**
          * entry point for americas
          */
-        'americas': string;
+        americas: string;
     };
     /**
      * API path for the Cortex Schema Service

@@ -1,3 +1,4 @@
+/// <reference types="node" />
 import * as http2 from 'http2';
 import { Credentials } from '.';
 import { ErrorTypes } from './sdkError';
@@ -37,7 +38,7 @@ export interface Http2FetchOpts extends http2.ClientSessionOptions, http2.Secure
 /**
  * Credential tuple
  */
-export declare type CredentialTuple = {
+export type CredentialTuple = {
     /**
      * Data lake unique identifier for this credential object
      */
